@@ -93,7 +93,9 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+										<i className="material-icons left">add_circle_outline</i>Add technology
+									</button>
 								</div>
 							</div>
 						</div>
@@ -131,7 +133,9 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+										<i className="material-icons left">add_circle_outline</i>Add technology
+									</button>
 								</div>
 							</div>
 						</div>
@@ -168,7 +172,9 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+										<i className="material-icons left">add_circle_outline</i>Add technology
+									</button>
 								</div>
 							</div>
 						</div>
@@ -205,14 +211,18 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+										<i className="material-icons left">add_circle_outline</i>Add technology
+									</button>
 								</div>
 							</div>
 						</div>
 
 
 						<div className="row indigo darken-1 add-category-btn" style={{ padding: '1vh', margin: '0 -0.55vw' }}>
-							<a className="btn left">Add category</a>
+							<button className="btn waves-effect waves-light left" href="">
+								<i className="material-icons left">add_circle_outline</i>Add category
+							</button>
 						</div>
 
 					</div>
