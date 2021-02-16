@@ -1,0 +1,32 @@
+.item-title {
+  font-size: 2rem;
+}
+
+.item-image {
+  height: 20vh;
+  width: auto;
+}
+
+@media(max-width: 650px) {
+  .item-title {
+    font-size: 1.5rem;
+    text-align: center !important;
+  }
+ 
+  .item-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #industry-item {
+    display: block !important;
+    float: left !important;
+  }
+}
+
+@media(min-width: 900px) and (max-width: 1300px) {
+  #industry-item {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
