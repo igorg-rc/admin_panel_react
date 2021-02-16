@@ -60,7 +60,7 @@ export default function Technologies() {
 		<div className="">
 			<h1 className="page-title">Technologies</h1>
 			<div className="row">
-				<div className="col s12 blue-grey lighten-4">
+				<div className="col s12 grey lighten-4">
 					<div className="content">
 						<div id="backend" className="tech-category">
 							<div className="row indigo darken-1">

@@ -23,7 +23,7 @@ export default function Layout() {
       <>
         <div className="has-fixed-sidebar">
           <header>
-            <div className="navbar-fixed">
+            {/* <div className="navbar-fixed">
               <nav className="navbar white">
                 <div className="nav-wrapper">
                   <ul id="nav-mobile" className="right">
@@ -32,7 +32,7 @@ export default function Layout() {
                   </ul><a href="#!" data-target="sidenav-left" className="sidenav-trigger left"><i className="material-icons white-text">menu</i></a>
                 </div>
               </nav>
-            </div>
+            </div> */}
             <ul id="sidenav-left" className="sidenav sidenav-fixed indigo darken-1 white-text left-align">
               <li className="valign-wrapper">
                 <img className="img-logo" src={logo} />
@@ -41,6 +41,7 @@ export default function Layout() {
               <li><NavLink to="/technologies" activeClassName="active" className="waves-effect white-text">Technologies<i className="material-icons white-text">build</i></NavLink></li>
               <li><NavLink to="/industries" activeClassName="active" className="waves-effect white-text">Industries<i className="material-icons white-text">cases</i></NavLink></li>
               <li><NavLink to="/messages" activeClassName="active" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></NavLink></li>
+              <li><NavLink to="/messages" activeClassName="active" className="waves-effect white-text">Logout<i className="material-icons white-text">logout</i></NavLink></li>
             </ul>
           </header>
         </div>
