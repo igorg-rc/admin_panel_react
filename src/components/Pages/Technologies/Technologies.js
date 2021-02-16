@@ -6,7 +6,7 @@ import './Technologies.css'
 export default function Technologies() {
 	const frontendList = technologies.frontend.map(technology => {
 		return	<tr>
-							<td>{technology.title}</td>
+							<td style={{ marginLeft: '10vw' }}>{technology.title}</td>
 							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
 							<td className="right-align">
 								<div>
@@ -66,7 +66,7 @@ export default function Technologies() {
 							<div className="row indigo darken-1">
 								<div className="valign-wrapper">
 									<div className="col s6">
-										<span className="category-title white-text left">Backend</span>
+										<span className="category-title white-text left">Frontend</span>
 									</div>
 									<div className="col s6">
 										<div className="right" style={{ marginRight: '0.2vw' }}>
@@ -87,7 +87,7 @@ export default function Technologies() {
 								</thead>
 				
 								<tbody>
-									{backendList}
+									{frontendList}
 								</tbody>
 							</table>
 
