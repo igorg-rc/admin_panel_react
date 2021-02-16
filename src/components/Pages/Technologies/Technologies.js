@@ -1,6 +1,8 @@
 import React from 'react'
 import { technologies } from './TechnologiesData'
 
+import './Technologies.css'
+
 export default function Technologies() {
 	const frontendList = technologies.frontend.map(technology => {
 		return	<tr>
@@ -16,7 +18,7 @@ export default function Technologies() {
 	const backendList = technologies.backend.map(technology => {
 		return	<tr>
 							<td>{technology.title}</td>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title} style={{ height: '30px' }}></img></td>
 							<td>
 								<a className="btn-small green">Edit</a> 
 								<a className="btn-small red">Delete</a> 
@@ -67,7 +69,7 @@ export default function Technologies() {
 								</div>
 							</div>
 
-							<table className="centered">
+							<table className="centered striped striped">
 								<thead>
 									<tr>
 										<th>Title</th>
@@ -81,8 +83,8 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align">
-								<button className="btn blue add-button" href="">Add technology</button>
+							<div className="center-align add-technology-btn">
+								<button className="btn blue" href="">Add technology</button>
 							</div>
 						</div>
 
@@ -103,7 +105,7 @@ export default function Technologies() {
 								</div>
 							</div>
 
-							<table className="centered">
+							<table className="centered striped striped">
 								<thead>
 									<tr>
 										<th>Title</th>
@@ -117,8 +119,8 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align">
-								<button className="btn blue add-button" href="">Add technology</button>
+							<div className="center-align add-technology-btn">
+								<button className="btn blue" href="">Add technology</button>
 							</div>
 						</div>
 
@@ -138,7 +140,7 @@ export default function Technologies() {
 								</div>
 							</div>
 
-							<table className="centered">
+							<table className="centered striped">
 								<thead>
 									<tr>
 										<th>Title</th>
@@ -152,8 +154,8 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align">
-								<button className="btn blue add-button" href="">Add technology</button>
+							<div className="center-align add-technology-btn">
+								<button className="btn blue" href="">Add technology</button>
 							</div>
 						</div>
 
@@ -172,7 +174,7 @@ export default function Technologies() {
 								</div>
 							</div>
 
-							<table className="centered">
+							<table className="centered striped">
 								<thead>
 									<tr>
 										<th>Title</th>
@@ -186,13 +188,13 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align">
-								<button className="btn blue add-button" href="">Add technology</button>
+							<div className="center-align add-technology-btn">
+								<button className="btn blue" href="">Add technology</button>
 							</div>
 						</div>
 
 
-						<div className="row blue-grey darken-1" style={{ padding: '3vh', margin: '0 -0.55vw' }}>
+						<div className="row blue-grey darken-1 add-category-btn" style={{ padding: '1vh', margin: '0 -0.55vw' }}>
 							<a className="btn blue">Add category</a>
 						</div>
 
