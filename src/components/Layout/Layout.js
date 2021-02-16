@@ -38,9 +38,9 @@ export default function Layout() {
               <img className="img-logo" src={logo} />
               <h4>Admin panel</h4>
             </li>
-            <li><NavLink to="/technologies" className="waves-effect white-text">Technologies<i className="material-icons white-text">build</i></NavLink></li>
-            <li><NavLink to="/industries" className="waves-effect white-text">Industries<i className="material-icons white-text">cases</i></NavLink></li>
-            <li><NavLink to="/messages" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></NavLink></li>
+            <li><NavLink to="/technologies" activeClassName="active" className="waves-effect white-text">Technologies<i className="material-icons white-text">build</i></NavLink></li>
+            <li><NavLink to="/industries" activeClassName="active" className="waves-effect white-text">Industries<i className="material-icons white-text">cases</i></NavLink></li>
+            <li><NavLink to="/messages" activeClassName="active" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></NavLink></li>
           </ul>
         </header>
       </div>
