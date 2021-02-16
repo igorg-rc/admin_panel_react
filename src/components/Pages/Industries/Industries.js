@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Industries.css'
 import { industries } from './IndustriesData'
+import {Modal, Button, Icon} from 'react-materialize'
 
 export default function Industries() {
 
@@ -16,8 +17,20 @@ export default function Industries() {
 											<img className="item-image" src={industry.imgUrl} alt={industry.title} />
 										</div>
 										<div className="col s12 m12 l4">
-											<a className="btn-small green modal-trigger" href="#edit-modal">Edit</a> 
-											<a className="btn-small red">Delete</a> 
+											<Modal
+												header='Modal Header'
+												trigger={<Button className="btn small green" waves='light'>Edit</Button>}>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+													incididunt ut labore et dolore magna aliqua.</p>
+											</Modal> 
+											<Modal
+												header='Delete item. Are you sure?' className="red-text center"
+												paddingTop='10%'
+												trigger={<Button className="btn small red" waves='light'>Delete</Button>}>
+												
+												<button className="btn blue">Cancel</button>
+												<button className="btn red">Delete</button>
+											</Modal>  
 										</div>
 									</div>
 								</div>
@@ -38,20 +51,9 @@ export default function Industries() {
 					</div>
 				</div>		
 			</div>
-
-			{/* Edit modal */}
-				<div id="edit-modal" className="modal">
-				<div className="modal-content">
-					<h4>Modal Header</h4>
-					<p>A bunch of text</p>
-				</div>
-				<div className="modal-footer">
-					<a href="#!" className="modal-close waves-effect waves-green btn-flat">Agree</a>
-				</div>
-			</div>
 		</div>
 
-
+		
 
 	
 	)
