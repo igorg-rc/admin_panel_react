@@ -16,7 +16,7 @@ function App() {
         <div className="container">
           <main>
             <Switch>
-              <Route path="/" component={Home} exact />
+              <Route path="/" activeClassName='is-active' component={Home} exact />
               <Route path="/technologies" component={Technologies} />
               <Route path="/industries" component={Industries} />
               <Route path="/messages" component={Messages} />

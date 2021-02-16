@@ -1,6 +1,6 @@
 import React from 'react'
 import M from 'materialize-css/dist/js/materialize.min.js'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import './Layout.css'
 import logo from '../../img/layout/index1_square_white_96.png'
@@ -24,7 +24,7 @@ export default function Layout() {
       <div className="has-fixed-sidebar">
         <header>
           <div className="navbar-fixed">
-            <nav className="navbar teal darken-3">
+            <nav className="navbar indigo lighten-2">
               <div className="nav-wrapper">
                 <ul id="nav-mobile" className="right">
                   <li><a href="#!" data-target="chat-dropdown" className="dropdown-trigger waves-effect"><i className="material-icons">settings</i></a></li>
@@ -33,14 +33,14 @@ export default function Layout() {
               </div>
             </nav>
           </div>
-          <ul id="sidenav-left" className="sidenav sidenav-fixed teal darken-3 darken-3 white-text">
+          <ul id="sidenav-left" className="sidenav sidenav-fixed indigo darken-1 white-text">
             <li className="valign-wrapper">
               <img className="img-logo" src={logo} />
               <h4>Admin panel</h4>
             </li>
-            <li><Link to="/technologies" className="waves-effect white-text">Technologies<i className="material-icons white-text">build</i></Link></li>
-            <li><Link to="/industries" className="waves-effect white-text">Industries<i className="material-icons white-text">cases</i></Link></li>
-            <li><Link to="/messages" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></Link></li>
+            <li><NavLink to="/technologies" className="waves-effect white-text">Technologies<i className="material-icons white-text">build</i></NavLink></li>
+            <li><NavLink to="/industries" className="waves-effect white-text">Industries<i className="material-icons white-text">cases</i></NavLink></li>
+            <li><NavLink to="/messages" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></NavLink></li>
           </ul>
         </header>
       </div>
