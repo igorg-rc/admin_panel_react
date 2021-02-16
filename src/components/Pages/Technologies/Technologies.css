@@ -10,3 +10,16 @@ td img {
   padding: '1vh';
   margin: '0 -0.55vw'; 
 }
+
+.material-icons {
+  font-weight: normal !important;
+}
+
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+
+td {
+  width: 25% ;
+}

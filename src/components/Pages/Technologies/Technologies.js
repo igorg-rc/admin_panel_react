@@ -7,10 +7,12 @@ export default function Technologies() {
 	const frontendList = technologies.frontend.map(technology => {
 		return	<tr>
 							<td>{technology.title}</td>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td>
-								<a className="btn-small green">Edit</a> 
-								<a className="btn-small red">Delete</a> 
+							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="right-align">
+								<div>
+									<a className="indigo-text"><i className="material-icons">create</i></a>
+									<a className="indigo-text"><i className="material-icons">delete</i></a>
+								</div>
 							</td>
 						</tr>
 	});
@@ -18,10 +20,12 @@ export default function Technologies() {
 	const backendList = technologies.backend.map(technology => {
 		return	<tr>
 							<td>{technology.title}</td>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title} style={{ height: '30px' }}></img></td>
-							<td>
-								<a className="btn-small green">Edit</a> 
-								<a className="btn-small red">Delete</a> 
+							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="right-align">
+								<div>
+									<a className="indigo-text"><i className="material-icons">create</i></a>
+									<a className="indigo-text"><i className="material-icons">delete</i></a>
+								</div>
 							</td>
 						</tr>
 	});
@@ -29,10 +33,12 @@ export default function Technologies() {
 	const toolsList = technologies.tools.map(technology => {
 		return	<tr>
 							<td>{technology.title}</td>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td>
-								<a className="btn-small green">Edit</a> 
-								<a className="btn-small red">Delete</a> 
+							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="right-align">
+								<div>
+									<a className="indigo-text"><i className="material-icons">create</i></a>
+									<a className="indigo-text"><i className="material-icons">delete</i></a>
+								</div>
 							</td>
 						</tr>
 	});
@@ -40,10 +46,12 @@ export default function Technologies() {
 	const apiList = technologies.api.map(technology => {
 		return	<tr>
 							<td>{technology.title}</td>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td>
-								<a className="btn-small green">Edit</a> 
-								<a className="btn-small red">Delete</a> 
+							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="right-align">
+								<div>
+									<a className="indigo-text"><i className="material-icons">create</i></a>
+									<a className="indigo-text"><i className="material-icons">delete</i></a>
+								</div>
 							</td>
 						</tr>
 	});
@@ -54,63 +62,27 @@ export default function Technologies() {
 			<div className="row">
 				<div className="col s12 blue-grey lighten-4">
 					<div className="content">
-						<div id="frontend" className="tech-category">
-							<div className="row blue-grey darken-1">
-								<div className="valign-wrapper">
-									<div className="col s6">
-										<span className="category-title white-text left">Frontend</span>
-									</div>
-									<div className="col s6">
-										<div className="right">
-											<a className="btn-small green">Edit</a>
-											<a className="btn-small red">Delete</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<table className="centered striped striped">
-								<thead>
-									<tr>
-										<th>Title</th>
-										<th>Image</th>
-										<th>Actions</th>
-									</tr>
-								</thead>
-				
-								<tbody>
-									{frontendList}
-								</tbody>
-							</table>
-
-							<div className="center-align add-technology-btn">
-								<button className="btn blue" href="">Add technology</button>
-							</div>
-						</div>
-
-
-
 						<div id="backend" className="tech-category">
-							<div className="row blue-grey darken-1">
+							<div className="row indigo darken-1">
 								<div className="valign-wrapper">
 									<div className="col s6">
 										<span className="category-title white-text left">Backend</span>
 									</div>
 									<div className="col s6">
-										<div className="right">
-											<a className="btn-small green">Edit</a>
-											<a className="btn-small red">Delete</a>
+										<div className="right" style={{ marginRight: '0.2vw' }}>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<table className="centered striped striped">
+							<table className="">
 								<thead>
 									<tr>
-										<th>Title</th>
-										<th>Image</th>
-										<th>Actions</th>
+										<th className="left">Title</th>
+										<th className="center">Image</th>
+										<th style={{ marginRight: '0.6vw' }} className="right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -119,33 +91,73 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align add-technology-btn">
-								<button className="btn blue" href="">Add technology</button>
+							<div className="center-align add-technology-btn row">
+								<div className="col">
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+								</div>
 							</div>
 						</div>
 
 
-						<div id="sdsd" className="tech-category">
-							<div className="row blue-grey darken-1">
+
+						<div id="backend" className="tech-category">
+							<div className="row indigo darken-1">
 								<div className="valign-wrapper">
 									<div className="col s6">
-										<span className="category-title white-text left">Tools</span>
+										<span className="category-title white-text left">Backend</span>
 									</div>
 									<div className="col s6">
-										<div className="right">
-											<a className="btn-small green">Edit</a>
-											<a className="btn-small red">Delete</a>
+										<div className="right" style={{ marginRight: '0.2vw' }}>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<table className="centered striped">
+							<table className="">
 								<thead>
 									<tr>
-										<th>Title</th>
-										<th>Image</th>
-										<th>Actions</th>
+										<th className="left">Title</th>
+										<th className="center">Image</th>
+										<th style={{ marginRight: '0.6vw' }} className="right">Actions</th>
+									</tr>
+								</thead>
+				
+								<tbody>
+									{backendList}
+								</tbody>
+							</table>
+
+							<div className="center-align add-technology-btn row">
+								<div className="col">
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div id="tools" className="tech-category">
+							<div className="row indigo darken-1">
+								<div className="valign-wrapper">
+									<div className="col s6">
+										<span className="category-title white-text left">Tools</span>
+									</div>
+									<div className="col s6">
+										<div className="right" style={{ marginRight: '0.2vw' }}>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<table className="">
+								<thead>
+									<tr>
+										<th className="left">Title</th>
+										<th className="center">Image</th>
+										<th style={{ marginRight: '0.6vw' }} className="right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -154,32 +166,35 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align add-technology-btn">
-								<button className="btn blue" href="">Add technology</button>
+							<div className="center-align add-technology-btn row">
+								<div className="col">
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+								</div>
 							</div>
 						</div>
 
+
 						<div id="api" className="tech-category">
-							<div className="row blue-grey darken-1">
+							<div className="row indigo darken-1">
 								<div className="valign-wrapper">
 									<div className="col s6">
 										<span className="category-title white-text left">API</span>
 									</div>
 									<div className="col s6">
-										<div className="right">
-											<a className="btn-small green">Edit</a>
-											<a className="btn-small red">Delete</a>
+										<div className="right" style={{ marginRight: '0.2vw' }}>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
+											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<table className="centered striped">
+							<table className="">
 								<thead>
 									<tr>
-										<th>Title</th>
-										<th>Image</th>
-										<th>Actions</th>
+										<th className="left">Title</th>
+										<th className="center">Image</th>
+										<th style={{ marginRight: '0.5vw' }} className="right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -188,14 +203,16 @@ export default function Technologies() {
 								</tbody>
 							</table>
 
-							<div className="center-align add-technology-btn">
-								<button className="btn blue" href="">Add technology</button>
+							<div className="center-align add-technology-btn row">
+								<div className="col">
+									<button className="btn indigo darken-2 waves-effect waves-light" href="">Add technology</button>
+								</div>
 							</div>
 						</div>
 
 
-						<div className="row blue-grey darken-1 add-category-btn" style={{ padding: '1vh', margin: '0 -0.55vw' }}>
-							<a className="btn blue">Add category</a>
+						<div className="row indigo darken-1 add-category-btn" style={{ padding: '1vh', margin: '0 -0.55vw' }}>
+							<a className="btn left">Add category</a>
 						</div>
 
 					</div>

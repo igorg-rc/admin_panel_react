@@ -4,6 +4,10 @@
   margin: 10px 25px 0 28px;
 }
 
+i.material-icons, .img-logo {
+  margin-right: 0.5vw !important; 
+}
+
 .content {
   padding: 0%;
 }
