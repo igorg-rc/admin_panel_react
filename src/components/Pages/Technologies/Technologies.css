@@ -20,8 +20,7 @@ td img {
 
 a i.material-icons:hover {
   color: #009688;
-  transform: scale(1.1);
-  cursor:pointer;
+
 }
 
 a i.material-icons:active {

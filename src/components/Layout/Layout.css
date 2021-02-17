@@ -33,13 +33,13 @@ hr {
 }
 
 /* === Sidenav overlapping fixing === */
-header, main, footer {
+/* header, main, footer {
   padding-left: 240px;
 }
 
 header {
   display: block;
-} 
+}  */
 /* =================================== */
 
 @media only screen and (max-width : 992px) {

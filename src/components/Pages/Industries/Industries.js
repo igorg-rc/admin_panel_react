@@ -7,35 +7,23 @@ import {Modal, Button, Icon} from 'react-materialize'
 export default function Industries() {
 
 	const industriesList = industries.map(industry => {
-		return 	<div className="col s12">
-								<div id="industry-item" className="row" style={{ paddingTop: '2vh' }}>
-									<div className="valign-wrapper">
-										<div className="col s12 m12 l4">
-											<h5 className="item-title">{industry.title}</h5>
+		return 	  <div class="row">
+								<div class="col s12 l4">
+									<div class="card">
+										<div class="card-image">
+											<img src={industry.imgUrl} alt={industry.title} />
+											<span class="card-title">{industry.title}</span>
 										</div>
-										<div className="col s12 m12 l4">
-											<img className="item-image" src={industry.imgUrl} alt={industry.title} />
+										<div class="card-content">
+											<p>I am a very simple card. I am good at containing small bits of information.
+											I am convenient because I require little markup to use effectively.</p>
 										</div>
-										<div className="col s12 m12 l4">
-											<Modal
-												header='Modal Header'
-												trigger={<Button className="btn small green" waves='light'>Edit</Button>}>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-													incididunt ut labore et dolore magna aliqua.</p>
-											</Modal> 
-											<Modal
-												header='Delete item. Are you sure?' className="red-text center"
-												paddingTop='10%'
-												trigger={<Button className="btn small red" waves='light'>Delete</Button>}>
-												
-												<button className="btn blue">Cancel</button>
-												<button className="btn red">Delete</button>
-											</Modal>  
+										<div class="card-action">
+											<a href="#">This is a link</a>
 										</div>
 									</div>
 								</div>
-							<hr />
-						</div>
+							</div>
 	})
 
 	return (
@@ -47,6 +35,20 @@ export default function Industries() {
 						<div className="row">
 							{industriesList}
 							<a className="btn blue">Add industry</a>
+							{/* <Modal
+								header='Modal Header'
+								trigger={<Button className="btn small green" waves='light'>Edit</Button>}>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.</p>
+							</Modal> 
+							<Modal
+								header='Delete item. Are you sure?' className="red-text center"
+								paddingTop='10%'
+								trigger={<Button className="btn small red" waves='light'>Delete</Button>}>
+								
+								<button className="btn blue">Cancel</button>
+								<button className="btn red">Delete</button>
+							</Modal>   */}
 						</div>
 					</div>
 				</div>		
