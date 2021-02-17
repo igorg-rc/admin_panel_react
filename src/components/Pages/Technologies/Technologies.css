@@ -25,6 +25,10 @@ td img {
   margin-left: 1.3vw;
 }
 
+table > tbody > tr:last-child {
+  border-bottom: none;
+}
+
 td span {
   /* margin-left: -0.3vw; */
 }
