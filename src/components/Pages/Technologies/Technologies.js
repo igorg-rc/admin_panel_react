@@ -6,12 +6,12 @@ import './Technologies.css'
 export default function Technologies() {
 	const frontendList = technologies.frontend.map(technology => {
 		return	<tr>
-							<td style={{ marginLeft: '10vw' }}>{technology.title}</td>
-							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td className="right-align">
+							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td><span>{technology.title}</span></td>
+							<td className="right td-actions">
 								<div>
-									<a className="indigo-text"><i className="material-icons waves-effect waves-light actions">create</i></a>
-									<a className="indigo-text"><i className="material-icons waves-effect waves-light actions">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
 								</div>
 							</td>
 						</tr>
@@ -19,12 +19,12 @@ export default function Technologies() {
 
 	const backendList = technologies.backend.map(technology => {
 		return	<tr>
-							<td>{technology.title}</td>
-							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td className="right-align">
+							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td><span>{technology.title}</span></td>
+							<td className="right td-actions">
 								<div>
-									<a className="indigo-text"><i className="material-icons">create</i></a>
-									<a className="indigo-text"><i className="material-icons">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
 								</div>
 							</td>
 						</tr>
@@ -32,12 +32,12 @@ export default function Technologies() {
 
 	const toolsList = technologies.tools.map(technology => {
 		return	<tr>
-							<td>{technology.title}</td>
-							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td className="right-align">
+							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td><span>{technology.title}</span></td>
+							<td className="right td-actions">
 								<div>
-									<a className="indigo-text"><i className="material-icons">create</i></a>
-									<a className="indigo-text"><i className="material-icons">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
 								</div>
 							</td>
 						</tr>
@@ -45,12 +45,12 @@ export default function Technologies() {
 
 	const apiList = technologies.api.map(technology => {
 		return	<tr>
-							<td>{technology.title}</td>
-							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td className="right-align">
+							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td><span>{technology.title}</span></td>
+							<td className="right td-actions">
 								<div>
-									<a className="indigo-text"><i className="material-icons">create</i></a>
-									<a className="indigo-text"><i className="material-icons">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
+									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
 								</div>
 							</td>
 						</tr>
@@ -58,7 +58,8 @@ export default function Technologies() {
 
 	return (
 		<div className="">
-			<h1 className="page-title">Technologies</h1>
+			<h4 id="tech-title" className="page-title left">Technologies</h4>
+			<hr />
 			<div className="row">
 				<div className="col s12 grey lighten-4">
 					<div className="content">
@@ -69,7 +70,7 @@ export default function Technologies() {
 										<span className="category-title white-text left">Frontend</span>
 									</div>
 									<div className="col s6">
-										<div className="right" style={{ marginRight: '0.2vw' }}>
+										<div className="right" style={{ marginRight: '-0.4vw' }}>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
@@ -80,9 +81,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="left">Title</th>
-										<th className="center">Image</th>
-										<th style={{ marginRight: '0.6vw' }} className="right">Actions</th>
+										<th className="img-column th-img">Image</th>
+										<th className="th-title">Title</th>
+										<th className="right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -120,9 +121,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="left">Title</th>
-										<th className="center">Image</th>
-										<th style={{ marginRight: '0.6vw' }} className="right">Actions</th>
+										<th className="img-column th-img">Image</th>
+										<th className="th-title">Title</th>
+										<th className="right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -159,9 +160,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="left">Title</th>
-										<th className="center">Image</th>
-										<th style={{ marginRight: '0.6vw' }} className="right">Actions</th>
+										<th className="img-column th-img">Image</th>
+										<th className="th-title">Title</th>
+										<th className="right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -198,9 +199,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="left">Title</th>
-										<th className="center">Image</th>
-										<th style={{ marginRight: '0.5vw' }} className="right">Actions</th>
+										<th className="img-column th-img">Image</th>
+										<th className="th-title">Title</th>
+										<th className="right">Actions</th>
 									</tr>
 								</thead>
 				

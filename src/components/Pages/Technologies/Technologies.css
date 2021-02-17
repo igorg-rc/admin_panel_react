@@ -1,5 +1,35 @@
+/* #tech-title {
+  border-bottom: 1px solid black;
+  width: 200px !important;
+} */
+
+hr {
+  background-color: red;
+}
+
+/* td.td-icons {
+  margin-right: 0% !important;
+} */
+
+th.img-column {
+  width: 7% !important;
+}
+
+th.th-title {
+  margin-left: 5vw;
+}
+
+td.td-actions {
+  margin-right: -0.6vw;
+}
+
 td img {
   width: 30px;
+  margin-left: -0.2vw;
+}
+
+td span {
+  /* margin-left: -0.3vw; */
 }
 
 .add-technology-btn {
@@ -15,8 +45,6 @@ td img {
   box-shadow: none !important;
   transition: all 0.3s ease-in-out;
 }
-
-
 
 a i.material-icons:hover {
   color: #009688;

@@ -12,8 +12,9 @@ i.material-icons, .img-logo {
   padding: 0%;
 }
 
+
 span.category-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   /* padding: 0.5rem 0; */
 }
 
@@ -22,8 +23,11 @@ span.category-title {
 }
 
 .active {
-  font-weight: bold !important;
-  background: rgba(0,0,0, 0.2);
+  background: rgba(0,0,0, 0.4);
+}
+
+ul li a:hover {
+  background: rgba(0,0,0, 0.3) !important;
 }
 
 hr {
@@ -33,13 +37,13 @@ hr {
 }
 
 /* === Sidenav overlapping fixing === */
-/* header, main, footer {
-  padding-left: 240px;
+header, main, footer {
+  padding-left: 120px;
 }
 
 header {
   display: block;
-}  */
+} 
 /* =================================== */
 
 @media only screen and (max-width : 992px) {
