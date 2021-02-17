@@ -57,7 +57,7 @@ export default function Technologies() {
 	});
 
 	return (
-		<div className="" style={{ border: '1px solid black' }}>
+		<div className="">
 			<div style={{ paddingBottom: '75px' }}>
 				<h4 id="tech-title" className="page-title left">Technologies</h4>
 			</div>
