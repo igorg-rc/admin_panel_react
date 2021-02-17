@@ -1,6 +1,7 @@
-/* #tech-title {
-  padding-bottom: 10px;
-} */
+#tech-title {
+  color: #222C67;
+  /* font-weight: 400; */
+}
 
 
 /* td.td-icons {
@@ -16,7 +17,7 @@ th.th-title {
 }
 
 th.th-actions {
-  /* margin-right: 1; */
+  margin-right: 1vh;
 }
 
 td.td-title {
@@ -24,7 +25,7 @@ td.td-title {
 }
 
 td.td-actions {
-  margin-right: -0.5vw !important;
+  /* margin-right: 0.5vw !important; */
 }
 
 td img {
