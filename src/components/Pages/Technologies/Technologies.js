@@ -58,7 +58,7 @@ export default function Technologies() {
 
 	return (
 		<div className="">
-			<div>
+			<div style={{ paddingBottom: '80px' }}>
 				<h4 id="tech-title" className="page-title left">Technologies</h4>
 			</div>
 			{/* <hr style={{ position: 'absolute', top: '6.2%', width: '60.9%' }} /> */}
