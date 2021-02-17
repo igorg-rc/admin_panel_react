@@ -58,11 +58,10 @@ export default function Technologies() {
 
 	return (
 		<div className="">
-			<div style={{ paddingBottom: '80px' }}>
+			<div style={{ paddingBottom: '75px' }}>
 				<h4 id="tech-title" className="page-title left">Technologies</h4>
 			</div>
-			{/* <hr style={{ position: 'absolute', top: '6.2%', width: '60.9%' }} /> */}
-			<hr />
+			<div style={{ backgroundColor: 'black', height: '0.25vh', marginBottom: '60px' }}></div>
 			<div className="row">
 				<div className="col s12 grey lighten-4">
 					<div className="content">
