@@ -81,9 +81,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="img-column th-img">Image</th>
+										<th className="center th-img">Image</th>
 										<th className="th-title">Title</th>
-										<th className="right">Actions</th>
+										<th className="th-actions right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -110,7 +110,7 @@ export default function Technologies() {
 										<span className="category-title white-text left">Backend</span>
 									</div>
 									<div className="col s6">
-										<div className="right" style={{ marginRight: '0.2vw' }}>
+										<div className="right" style={{ marginRight: '-0.4vw' }}>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
@@ -121,7 +121,7 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="img-column th-img">Image</th>
+										<th className="center th-img">Image</th>
 										<th className="th-title">Title</th>
 										<th className="right">Actions</th>
 									</tr>
@@ -149,7 +149,7 @@ export default function Technologies() {
 										<span className="category-title white-text left">Tools</span>
 									</div>
 									<div className="col s6">
-										<div className="right" style={{ marginRight: '0.2vw' }}>
+										<div className="right" style={{ marginRight: '-0.4vw' }}>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
@@ -160,7 +160,7 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="img-column th-img">Image</th>
+										<th className="center th-img">Image</th>
 										<th className="th-title">Title</th>
 										<th className="right">Actions</th>
 									</tr>
@@ -188,7 +188,7 @@ export default function Technologies() {
 										<span className="category-title white-text left">API</span>
 									</div>
 									<div className="col s6">
-										<div className="right" style={{ marginRight: '0.2vw' }}>
+										<div className="right" style={{ marginRight: '-0.4vw' }}>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">create</i></span></a>
 											<a className="white-text"><span className="title-icons"><i className="material-icons">delete</i></span></a>
 										</div>
@@ -199,7 +199,7 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="img-column th-img">Image</th>
+										<th className="center th-img">Image</th>
 										<th className="th-title">Title</th>
 										<th className="right">Actions</th>
 									</tr>
