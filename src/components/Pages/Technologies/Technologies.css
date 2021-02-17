@@ -11,9 +11,34 @@ td img {
   margin: '0 -0.55vw'; 
 }
 
-.material-icons {
-  font-weight: normal !important;
+.material-icons, i {
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out;
 }
+
+
+
+a i.material-icons:hover {
+  color: #009688;
+  transform: scale(1.1);
+  cursor:pointer;
+}
+
+a i.material-icons:active {
+  color: #80cbc4;
+}
+
+.btn-add-tech {
+
+}
+
+.btn-add-tech:hover {
+  opacity: 85%;
+}
+
+/* i:hover {
+  border-bottom: 2px solid #009688;
+} */
 
 table {
   table-layout: fixed ;

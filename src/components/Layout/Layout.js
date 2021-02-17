@@ -30,8 +30,8 @@ export default function Layout() {
               </li>
               <li><NavLink to="/technologies" activeClassName="active" className="waves-effect white-text">Technologies<i className="material-icons white-text">build</i></NavLink></li>
               <li><NavLink to="/industries" activeClassName="active" className="waves-effect white-text">Industries<i className="material-icons white-text">cases</i></NavLink></li>
-              <li><NavLink to="/messages" activeClassName="active" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></NavLink></li>
-              <li><NavLink to="/messages" activeClassName="active" className="waves-effect white-text">Logout<i className="material-icons white-text">logout</i></NavLink></li>
+              <li><NavLink to="/messages" activeClassName="active" className="waves-effect white-text">Messages<i className="material-icons white-text">email</i></NavLink></li><hr />
+              <li><NavLink to="/logout" activeClassName="active" className="waves-effect white-text">Logout<i className="material-icons white-text">logout</i></NavLink></li>
             </ul>
         </div>
       </>

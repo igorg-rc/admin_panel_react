@@ -10,8 +10,8 @@ export default function Technologies() {
 							<td className="center"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
 							<td className="right-align">
 								<div>
-									<a className="indigo-text"><i className="material-icons">create</i></a>
-									<a className="indigo-text"><i className="material-icons">delete</i></a>
+									<a className="indigo-text"><i className="material-icons waves-effect waves-light actions">create</i></a>
+									<a className="indigo-text"><i className="material-icons waves-effect waves-light actions">delete</i></a>
 								</div>
 							</td>
 						</tr>
@@ -93,7 +93,7 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+									<button className="btn indigo darken-2 waves-effect waves-light btn-add-tech" href="">
 										<i className="material-icons left">add_circle_outline</i>Add technology
 									</button>
 								</div>
@@ -133,7 +133,7 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+									<button className="btn indigo darken-2 waves-effect waves-light btn-add-tech" href="">
 										<i className="material-icons left">add_circle_outline</i>Add technology
 									</button>
 								</div>
@@ -172,7 +172,7 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+									<button className="btn indigo darken-2 waves-effect waves-light btn-add-tech" href="">
 										<i className="material-icons left">add_circle_outline</i>Add technology
 									</button>
 								</div>
@@ -211,7 +211,7 @@ export default function Technologies() {
 
 							<div className="center-align add-technology-btn row">
 								<div className="col">
-									<button className="btn indigo darken-2 waves-effect waves-light" href="">
+									<button className="btn indigo darken-2 waves-effect waves-light btn-add-tech" href="">
 										<i className="material-icons left">add_circle_outline</i>Add technology
 									</button>
 								</div>
