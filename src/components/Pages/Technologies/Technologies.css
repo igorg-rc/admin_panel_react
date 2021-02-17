@@ -8,8 +8,8 @@
 } */
 
 th.th-img {
-  width: 10% !important;
-  left: 0.3vw;
+  width: 12% !important;
+  left: 0.5vw;
 }
 
 th.th-title {
@@ -22,7 +22,7 @@ td.td-actions {
 
 td img {
   width: 30px;
-  margin-left: 1.3vw;
+  margin-left: 2vw;
 }
 
 table > tbody > tr:last-child {
