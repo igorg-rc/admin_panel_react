@@ -6,9 +6,9 @@ import './Technologies.css'
 export default function Technologies() {
 	const frontendList = technologies.frontend.map(technology => {
 		return	<tr>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td><span>{technology.title}</span></td>
-							<td className="right td-actions">
+							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-title"><span>{technology.title}</span></td>
+							<td className="td-actions right">
 								<div>
 									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
 									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
@@ -19,9 +19,9 @@ export default function Technologies() {
 
 	const backendList = technologies.backend.map(technology => {
 		return	<tr>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td><span>{technology.title}</span></td>
-							<td className="right td-actions">
+							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-title"><span>{technology.title}</span></td>
+							<td className="td-actions right">
 								<div>
 									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
 									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
@@ -32,9 +32,9 @@ export default function Technologies() {
 
 	const toolsList = technologies.tools.map(technology => {
 		return	<tr>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td><span>{technology.title}</span></td>
-							<td className="right td-actions">
+							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-title"><span>{technology.title}</span></td>
+							<td className="td-actions right">
 								<div>
 									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
 									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
@@ -45,9 +45,9 @@ export default function Technologies() {
 
 	const apiList = technologies.api.map(technology => {
 		return	<tr>
-							<td><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
-							<td><span>{technology.title}</span></td>
-							<td className="right td-actions">
+							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-title"><span>{technology.title}</span></td>
+							<td className="td-actions right">
 								<div>
 									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
 									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
@@ -57,7 +57,7 @@ export default function Technologies() {
 	});
 
 	return (
-		<div className="">
+		<div className="" style={{ border: '1px solid black' }}>
 			<div style={{ paddingBottom: '75px' }}>
 				<h4 id="tech-title" className="page-title left">Technologies</h4>
 			</div>
@@ -83,7 +83,7 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="center th-img">Image</th>
+										<th className="th-img">Image</th>
 										<th className="th-title">Title</th>
 										<th className="th-actions right">Actions</th>
 									</tr>
@@ -123,9 +123,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="center th-img">Image</th>
+										<th className="th-img">Image</th>
 										<th className="th-title">Title</th>
-										<th className="right">Actions</th>
+										<th className="th-actions right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -162,9 +162,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="center th-img">Image</th>
+										<th className="th-img">Image</th>
 										<th className="th-title">Title</th>
-										<th className="right">Actions</th>
+										<th className="th-actions right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -201,9 +201,9 @@ export default function Technologies() {
 							<table className="">
 								<thead>
 									<tr>
-										<th className="center th-img">Image</th>
+										<th className="th-img">Image</th>
 										<th className="th-title">Title</th>
-										<th className="right">Actions</th>
+										<th className="th-actions right">Actions</th>
 									</tr>
 								</thead>
 				
@@ -221,17 +221,14 @@ export default function Technologies() {
 							</div>
 						</div>
 
-
-						<div className="row indigo darken-1 add-category-btn" style={{ padding: '1vh', margin: '0 -0.55vw' }}>
-							<button className="btn waves-effect waves-light left" href="">
-								<i className="material-icons left">add_circle_outline</i>Add category
-							</button>
-						</div>
-
 					</div>
 				</div>
 
-			
+					<div style={{ textAlign: 'left' }}>
+						<button className="btn waves-effect waves-light" href="">
+							<i className="material-icons left">add_circle_outline</i>Add category
+						</button>
+					</div>
 			</div>
 		</div>
 	)

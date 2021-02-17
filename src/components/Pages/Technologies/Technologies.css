@@ -8,22 +8,31 @@
 } */
 
 th.th-img {
-  width: 12% !important;
-  left: 0.5vw;
+  width: 7% !important;
 }
 
 th.th-title {
-  margin-left: 10vw !important;
+  margin-left: 1.6vw;
+}
+
+th.th-actions {
+  /* margin-right: 1; */
+}
+
+td.td-title {
+  margin-left: -10vw !important;
 }
 
 td.td-actions {
-  margin-right: -0.6vw;
+  margin-right: -0.5vw !important;
 }
 
 td img {
   width: 30px;
-  margin-left: 2vw;
+  margin-left: -0.1vw;
 }
+
+
 
 table > tbody > tr:last-child {
   border-bottom: none;
