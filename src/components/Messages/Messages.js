@@ -1,5 +1,6 @@
 import React from 'react'
 import { Pagination, Icon } from 'react-materialize'
+import './Messages.css'
 
 export default function Messages() {
 	return (
@@ -11,12 +12,23 @@ export default function Messages() {
 				</div>
 				<div className="col s12 m3" style={{ paddingTop: '1.5vh' }}>
 				
-				<Pagination
+				{/* <Pagination
+					target="#messages"
 					activePage={3}
 					items={5}
 					leftBtn={<Icon>chevron_left</Icon>}
 					rightBtn={<Icon>chevron_right</Icon>}
-				/>
+				/> */}
+
+				<ul class="pagination">
+					<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+					<li class="active"><a href="#!">1</a></li>
+					<li class="waves-effect"><a href="#!">2</a></li>
+					<li class="waves-effect"><a href="#!">3</a></li>
+					<li class="waves-effect"><a href="#!">4</a></li>
+					<li class="waves-effect"><a href="#!">5</a></li>
+					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+				</ul>
 
 					<table id="messages">
 						<tbody>

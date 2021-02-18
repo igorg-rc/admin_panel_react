@@ -1,5 +1,10 @@
-ul.pagination li.disabled a {
-  background-color: red !important;
-  color: red !important;
+ul.pagination li.active a {
+  background-color: #009688 !important;
+  color: white !important;
+  /* background-color: red; */
+}
 
+ul.pagination li a:hover {
+  background-color: #f5f5f5 !important;
+  color: #009688;
 }

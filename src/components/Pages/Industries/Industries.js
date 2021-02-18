@@ -35,7 +35,7 @@ export default function Industries() {
 	})
 
 	return (
-		<div  id="technologies" style={{ paddingTop: '75px', paddingLeft: '' }} className="">
+		<div  id="technologies" style={{ paddingTop: '70px', paddingLeft: '' }} className="">
 			<div className="row">
 				<div className="col s12">
 					<div className="content">

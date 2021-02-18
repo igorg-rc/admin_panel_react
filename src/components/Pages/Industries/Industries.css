@@ -25,7 +25,10 @@
   justify-content: flex-end;
 }
 
-
+.sm12, .lg4 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 a i.card-icons {
   padding: 7px 0;
