@@ -1,4 +1,5 @@
 import React from 'react'
+import { Pagination, Icon } from 'react-materialize'
 
 export default function Messages() {
 	return (
@@ -9,7 +10,15 @@ export default function Messages() {
 					<div><span className="category-title left white-text">Income messages</span></div>
 				</div>
 				<div className="col s12 m3" style={{ paddingTop: '1.5vh' }}>
-					<table>
+				
+				<Pagination
+					activePage={3}
+					items={5}
+					leftBtn={<Icon>chevron_left</Icon>}
+					rightBtn={<Icon>chevron_right</Icon>}
+				/>
+
+					<table id="messages">
 						<tbody>
 							<tr style={{ fontWeight: 'bold' }}>
 								<td>Homer</td>
@@ -172,7 +181,7 @@ export default function Messages() {
 						<div className="" style={{ height: '100vh', paddingTop: '1vh',  textAlign: 'justify' }}>
 							<div className="row">
 								<div className="col s6">
-									<h6 className="left-align">From:<span style={{ fontWeight: 'middle' }}> Homer Simpson </span><span>homer.simpson@us.tv</span></h6>
+									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer Simpson </span><span>homer.simpson@us.tv</span></h6>
 								</div>
 								<div className="col s6 right">
 									<h6 className="right-align"><span>Feb 8, 2020, 03:03 AM</span></h6>

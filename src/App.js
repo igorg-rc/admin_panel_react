@@ -6,7 +6,7 @@ import Layout from './components/Layout/Layout';
 import Home from './components/Home';
 import Technologies from './components/Pages/Technologies/Technologies';
 import Industries from './components/Pages/Industries/Industries';
-import Messages from './components/Messages';
+import Messages from './components/Messages/Messages';
 import Error from './components/Error';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <div className="container">
           <main>
             <Switch>
-              <Route path="/" activeClassName='is-active' component={Home} exact />
+              <Route path="/" component={Home} exact />
               <Route path="/technologies" component={Technologies} />
               <Route path="/industries" component={Industries} />
               <Route path="/messages" component={Messages} />
