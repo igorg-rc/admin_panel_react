@@ -35,9 +35,13 @@ export default function Industries() {
 	})
 
 	return (
-		<div  id="technologies" style={{ paddingTop: '70px', paddingLeft: '' }} className="">
+		<div  id="technologies" style={{ paddingTop: '75px', paddingLeft: '0' }} className="">
 			<div className="row">
+			<div className="col s12 indigo darken-1">
+						<div><span className="category-title left white-text">Industries</span></div>
+					</div>
 				<div className="col s12">
+					
 					<div className="content">
 						<div className="row">
 								{industriesList}
