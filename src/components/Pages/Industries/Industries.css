@@ -18,13 +18,18 @@
 
 .card-action, .flex {
   display: flex;
-  padding: 0 1.5vw !important;
+  flex-direction: row;
+  align-content: flex-start;
+  align-self: center;
+
+  justify-content: flex-end;
 }
 
 
+
 a i.card-icons {
-  padding: 5px 0px;
-  margin-right: 1.2vw;
+  padding: 7px 0;
+  margin-right: -0.35vw !important;
 }
 
 a i.card-icons:hover {

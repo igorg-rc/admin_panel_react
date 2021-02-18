@@ -22,8 +22,8 @@ export default function Industries() {
 													<span class="card-title white-text left-align">{industry.title}</span>
 												</div>
 												<div className="col s4 flex">
-													<a href="#"><i className="material-icons indigo-text white-text valign-wrapper right card-icons">create</i></a>
-													<a href="#"><i className="material-icons indigo-text white-text valign-wrapper right card-icons">delete</i></a>
+													<a href="#"><i className="material-icons indigo-text white-text right card-icons">create</i></a>
+													<a href="#"><i className="material-icons indigo-text white-text right card-icons">delete</i></a>
 												</div>
 											</div>
 										</div>
@@ -41,11 +41,7 @@ export default function Industries() {
 					<div className="content">
 						<div className="row">
 								{industriesList}
-								<div style={{ textAlign: 'left', marginLeft: '0.5vw' }}>
-									<button className="btn waves-effect waves-light" href="">
-										<i className="material-icons left">add_circle_outline</i>Add industry
-									</button>
-								</div>
+								
 							{/* <Modal
 								header='Modal Header'
 								trigger={<Button className="btn small green" waves='light'>Edit</Button>}>
@@ -60,6 +56,13 @@ export default function Industries() {
 								<button className="btn blue">Cancel</button>
 								<button className="btn red">Delete</button>
 							</Modal>   */}
+						</div>
+						<div className="row">
+							<div className="col">
+								<button className="btn waves-effect waves-light" href="">
+									<i className="material-icons left">add_circle_outline</i>Add industry
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>		
