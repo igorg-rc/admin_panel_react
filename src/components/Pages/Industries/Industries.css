@@ -2,9 +2,34 @@
   font-size: 2rem;
 }
 
-.item-image {
-  height: 20vh;
+/* .item-image {
+  height: 10vh;
   width: auto;
+} */
+
+.card {
+  background-color: #f5f5f5 !important;
+}
+
+.card-content {
+  padding: 0 10px !important;
+  margin-top: -1vh !important;
+}
+
+.card-action, .flex {
+  display: flex;
+  padding: 0 1.5vw !important;
+}
+
+
+a i.card-icons {
+  padding: 5px 0px;
+  margin-right: 1.2vw;
+}
+
+a i.card-icons:hover {
+  color: #009688 !important;
+  cursor: pointer; 
 }
 
 @media(max-width: 650px) {

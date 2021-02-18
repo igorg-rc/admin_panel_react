@@ -7,34 +7,45 @@ import {Modal, Button, Icon} from 'react-materialize'
 export default function Industries() {
 
 	const industriesList = industries.map(industry => {
-		return 	  <div class="row">
-								<div class="col s12 l4">
+		return 	    <div class="col s12 m6 l4">
 									<div class="card">
+										
 										<div class="card-image">
 											<img src={industry.imgUrl} alt={industry.title} />
-											<span class="card-title">{industry.title}</span>
-										</div>
-										<div class="card-content">
-											<p>I am a very simple card. I am good at containing small bits of information.
-											I am convenient because I require little markup to use effectively.</p>
-										</div>
-										<div class="card-action">
-											<a href="#">This is a link</a>
 										</div>
 									</div>
+
+									<div className="card">
+										<div class="card-content indigo darken-1">
+											<div className="row">
+												<div className="col s8">
+													<span class="card-title white-text left-align">{industry.title}</span>
+												</div>
+												<div className="col s4 flex">
+													<a href="#"><i className="material-icons indigo-text white-text valign-wrapper right card-icons">create</i></a>
+													<a href="#"><i className="material-icons indigo-text white-text valign-wrapper right card-icons">delete</i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
 								</div>
-							</div>
+								
+						
 	})
 
 	return (
-		<div className="">
-			<h1>Industries</h1>
+		<div  id="technologies" style={{ paddingTop: '75px', paddingLeft: '' }} className="">
 			<div className="row">
-				<div className="col s12 blue-grey lighten-4">
+				<div className="col s12">
 					<div className="content">
 						<div className="row">
-							{industriesList}
-							<a className="btn blue">Add industry</a>
+								{industriesList}
+								<div style={{ textAlign: 'left', marginLeft: '0.5vw' }}>
+									<button className="btn waves-effect waves-light" href="">
+										<i className="material-icons left">add_circle_outline</i>Add industry
+									</button>
+								</div>
 							{/* <Modal
 								header='Modal Header'
 								trigger={<Button className="btn small green" waves='light'>Edit</Button>}>

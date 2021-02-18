@@ -9,8 +9,8 @@ export default function Technologies() {
 							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
 							<td className="td-actions">
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
@@ -20,8 +20,8 @@ export default function Technologies() {
 							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
 							<td className="td-actions">
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
@@ -31,8 +31,8 @@ export default function Technologies() {
 							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
 							<td className="td-actions">
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
@@ -42,14 +42,14 @@ export default function Technologies() {
 							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
 							<td className="td-actions">
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+								<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
 
 	return (
-		<div style={{ paddingTop: '75px'}}>
+		<div id="technologies" style={{ paddingTop: '75px'}}>
 			<div className="row">
 				<div className="col s12 grey lighten-4">
 					<div className="content">
