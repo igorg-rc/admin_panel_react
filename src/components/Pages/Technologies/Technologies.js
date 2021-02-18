@@ -57,15 +57,11 @@ export default function Technologies() {
 	});
 
 	return (
-		<div className="">
-			<div style={{ paddingBottom: '75px' }}>
-				<h4 id="tech-title" className="page-title left">Technologies</h4>
-			</div>
-			<div style={{ backgroundColor: '#222C67', height: '0.25vh', marginBottom: '60px' }}></div>
+		<div style={{ paddingTop: '75px'}}>
 			<div className="row">
 				<div className="col s12 grey lighten-4">
 					<div className="content">
-						<div id="backend" className="tech-category">
+						<div id="frontend" className="tech-category">
 							<div className="row indigo darken-1">
 								<div className="valign-wrapper">
 									<div className="col s6">
