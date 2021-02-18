@@ -6,52 +6,44 @@ import './Technologies.css'
 export default function Technologies() {
 	const frontendList = technologies.frontend.map(technology => {
 		return	<tr>
-							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
-							<td className="td-actions right">
-								<div>
-									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
-								</div>
+							<td className="td-actions">
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
 
 	const backendList = technologies.backend.map(technology => {
 		return	<tr>
-							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
-							<td className="td-actions right">
-								<div>
-									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
-								</div>
+							<td className="td-actions">
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
 
 	const toolsList = technologies.tools.map(technology => {
 		return	<tr>
-							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
-							<td className="td-actions right">
-								<div>
-									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
-								</div>
+							<td className="td-actions">
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
 
 	const apiList = technologies.api.map(technology => {
 		return	<tr>
-							<td className="td-img"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></td>
+							<td className="td-img"><div className="valign-wrapper"><img className="tech-icon" src={technology.imgUrl} alt={technology.title}></img></div></td>
 							<td className="td-title"><span>{technology.title}</span></td>
-							<td className="td-actions right">
-								<div>
-									<a className="indigo-text right"><i className="material-icons actions">delete</i></a>
-									<a className="indigo-text right"><i className="material-icons actions">create</i></a>
-								</div>
+							<td className="td-actions">
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">delete</i></a>
+									<a className="indigo-text right"><i className="material-icons actions valign-wrapper">create</i></a>
 							</td>
 						</tr>
 	});
@@ -62,7 +54,7 @@ export default function Technologies() {
 				<div className="col s12 grey lighten-4">
 					<div className="content">
 						<div id="frontend" className="tech-category">
-							<div className="row indigo darken-1">
+							<div className="row indigo darken-1" style={{ marginBottom: '10px !important' }}>
 								<div className="valign-wrapper">
 									<div className="col s6">
 										<span className="category-title white-text left">Frontend</span>
