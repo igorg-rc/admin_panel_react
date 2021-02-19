@@ -33,7 +33,7 @@ export default function Industries() {
 															value={industry.title}
 														/>
 														<TextInput
-															id="TextInput-4"
+															id="TextInput-2"
 															label="File"
 															type="file"
 														/>
