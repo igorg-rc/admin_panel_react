@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Industries.css'
 import { industries } from './IndustriesData'
-import {Modal, Button, Icon} from 'react-materialize'
+import {Modal, Button, Icon, TextInput, Textarea} from 'react-materialize'
 
 export default function Industries() {
 
@@ -22,8 +22,32 @@ export default function Industries() {
 													<span class="card-title white-text left-align">{industry.title}</span>
 												</div>
 												<div className="col s4 flex">
-													<a href="#"><i className="material-icons indigo-text white-text right card-icons">create</i></a>
-													<a href="#"><i className="material-icons indigo-text white-text right card-icons">delete</i></a>
+													{/* <a href="#"><i className="material-icons indigo-text white-text right card-icons">create</i></a>
+													<a href="#"><i className="material-icons indigo-text white-text right card-icons">delete</i></a> */}
+													<Modal
+														header={`Edit "${industry.title}" item`} className="center-align"
+														trigger={<a href="#"><i className="material-icons indigo-text white-text right card-icons">create</i></a>}>
+														<Textarea
+															id="Textarea-12"
+															label="Title"
+															value={industry.title}
+														/>
+														<TextInput
+															id="TextInput-4"
+															label="File"
+															type="file"
+														/>
+													</Modal>
+													<Modal
+														actions={[
+															<Button flat modal="close" node="button" waves="green" className="indigo darken-1 white-text left"><i className="material-icons left card-icons">close</i>Cancel</Button>,
+															<Button flat modal="close" node="button" waves="green" className="teal white-text right" onClick={ () => {console.log('Clicked!')} }><i className="material-icons left card-icons">delete</i>Delete</Button>
+														]}
+														header={`Delete "${industry.title}" item. Are you sure?`} className="center-align"
+														trigger={<a href="#"><i className="material-icons indigo-text white-text right card-icons">delete</i></a>}>
+														
+													</Modal>
+													
 												</div>
 											</div>
 										</div>
@@ -46,7 +70,7 @@ export default function Industries() {
 						<div className="row">
 								{industriesList}
 								
-							{/* <Modal
+							<Modal
 								header='Modal Header'
 								trigger={<Button className="btn small green" waves='light'>Edit</Button>}>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -59,7 +83,7 @@ export default function Industries() {
 								
 								<button className="btn blue">Cancel</button>
 								<button className="btn red">Delete</button>
-							</Modal>   */}
+							</Modal>  
 						</div>
 						<div className="row">
 							<div className="col">

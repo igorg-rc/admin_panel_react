@@ -25,11 +25,6 @@
   justify-content: flex-end;
 }
 
-.sm12, .lg4 {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 a i.card-icons {
   padding: 7px 0;
   margin-right: -0.35vw !important;
@@ -39,6 +34,22 @@ a i.card-icons:hover {
   color: #009688 !important;
   cursor: pointer; 
 }
+
+/* Modal settings */
+.modal {
+  width: 35vw;
+}
+
+.modal label {
+  background-color: white;
+  color: red;
+  font-size: 1rem;
+  text-align: center !important; 
+}
+
+.modal label[]
+
+
 
 @media(max-width: 650px) {
   .item-title {
