@@ -26,7 +26,7 @@ export const industries = [
     imgUrl: 'img/industries/finance_trading_2.jpg'
   },
   {
-    title: 'Healhcare',
+    title: 'Healthcare',
     body: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
     imgUrl: 'img/industries/healthcare_3.jpg'
   },
