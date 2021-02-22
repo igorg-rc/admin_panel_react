@@ -77,7 +77,7 @@ export default function Industries() {
 											<Modal
 												actions={[
 													<div className="center-align">
-														<Button flat modal="close" node="button" waves="light" className="indigo darken-1 white-text center-align"><i className="material-icons left card-icons">close</i>Cancel</Button>,
+														<Button flat modal="close" node="button" waves="light" className="indigo darken-1 white-text center-align"><i className="material-icons left card-icons">close</i>Cancel</Button>
 														<Button flat modal="close" node="button" waves="light" className="teal white-text" onClick={ () => {console.log('Clicked!')} }><i className="material-icons left card-icons">delete</i>Delete</Button>
 													</div>
 												]}

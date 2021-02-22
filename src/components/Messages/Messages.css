@@ -45,6 +45,7 @@ ul.pagination li a:hover {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
+  height: 90vh;
   border: 1px solid #ddd;
 }
 

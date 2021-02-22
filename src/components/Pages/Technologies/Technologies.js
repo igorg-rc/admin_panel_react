@@ -21,7 +21,7 @@ export default function Technologies() {
 												waves="light" 
 												className="indigo darken-1 white-text center-align">
 												<i className="material-icons left card-icons">close</i>Cancel
-											</Button>,
+											</Button>
 											<Button 
 												flat 
 												modal="close" 
@@ -109,7 +109,7 @@ export default function Technologies() {
 												waves="light" 
 												className="indigo darken-1 white-text center-align">
 												<i className="material-icons left card-icons">close</i>Cancel
-											</Button>,
+											</Button>
 											<Button 
 												flat 
 												modal="close" 
@@ -197,7 +197,7 @@ export default function Technologies() {
 												waves="light" 
 												className="indigo darken-1 white-text center-align">
 												<i className="material-icons left card-icons">close</i>Cancel
-											</Button>,
+											</Button>
 											<Button 
 												flat 
 												modal="close" 
@@ -285,7 +285,7 @@ export default function Technologies() {
 												waves="light" 
 												className="indigo darken-1 white-text center-align">
 												<i className="material-icons left card-icons">close</i>Cancel
-											</Button>,
+											</Button>
 											<Button 
 												flat 
 												modal="close" 
@@ -435,7 +435,7 @@ export default function Technologies() {
 															waves="light" 
 															className="indigo darken-1 white-text center-align">
 															<i className="material-icons left card-icons">close</i>Cancel
-														</Button>,
+														</Button>
 														<Button 
 															flat 
 															modal="close" 
@@ -606,7 +606,7 @@ export default function Technologies() {
 															waves="light" 
 															className="indigo darken-1 white-text center-align">
 															<i className="material-icons left card-icons">close</i>Cancel
-														</Button>,
+														</Button>
 														<Button 
 															flat 
 															modal="close" 
@@ -780,7 +780,7 @@ export default function Technologies() {
 																waves="light" 
 																className="indigo darken-1 white-text center-align">
 																<i className="material-icons left card-icons">close</i>Cancel
-															</Button>,
+															</Button>
 															<Button 
 																flat 
 																modal="close" 
@@ -952,7 +952,7 @@ export default function Technologies() {
 																waves="light" 
 																className="indigo darken-1 white-text center-align">
 																<i className="material-icons left card-icons">close</i>Cancel
-															</Button>,
+															</Button>
 															<Button 
 																flat 
 																modal="close" 
