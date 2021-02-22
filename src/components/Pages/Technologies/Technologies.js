@@ -78,7 +78,7 @@ export default function Technologies() {
 												<div className="col s3">
 													<div className="file-field input-field">
 														<div className="btn teal right waves-effect waves-light">
-															<span><i className="material-icons left">publish</i>Select file...</span>
+															<span><i className="material-icons left">publish</i>Select file</span>
 															<input type="file" />
 														</div>
 														<div className="file-path-wrapper">
@@ -166,7 +166,7 @@ export default function Technologies() {
 												<div className="col s3">
 													<div className="file-field input-field">
 														<div className="btn teal right waves-effect waves-light">
-															<span><i className="material-icons left">publish</i>Select file...</span>
+															<span><i className="material-icons left">publish</i>Select file</span>
 															<input type="file" />
 														</div>
 														<div className="file-path-wrapper">
@@ -254,7 +254,7 @@ export default function Technologies() {
 												<div className="col s3">
 													<div className="file-field input-field">
 														<div className="btn teal right waves-effect waves-light">
-															<span><i className="material-icons left">publish</i>Select file...</span>
+															<span><i className="material-icons left">publish</i>Select file</span>
 															<input type="file" />
 														</div>
 														<div className="file-path-wrapper">
@@ -342,7 +342,7 @@ export default function Technologies() {
 												<div className="col s3">
 													<div className="file-field input-field">
 														<div className="btn teal right waves-effect waves-light">
-															<span><i className="material-icons left">publish</i>Select file...</span>
+															<span><i className="material-icons left">publish</i>Select file</span>
 															<input type="file" />
 														</div>
 														<div className="file-path-wrapper">
@@ -412,7 +412,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn teal right waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Select file...</span>
+																		<span><i className="material-icons left">publish</i>Select file</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -496,7 +496,7 @@ export default function Technologies() {
 															onClick={ () => {console.log('Clicked!')} }>
 															<div className="btn-inner">
 																<div className="valign-wrapper">
-																	<i className="material-icons left">done</i>Update
+																	<i className="material-icons left">add</i>Add
 																</div>
 															</div>
 														</Button>
@@ -515,7 +515,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn left waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Select file...</span>
+																		<span><i className="material-icons left">publish</i>Select file</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -583,7 +583,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn teal right waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Select file...</span>
+																		<span><i className="material-icons left">publish</i>Select file</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -669,7 +669,7 @@ export default function Technologies() {
 															onClick={ () => {console.log('Clicked!')} }>
 															<div className="btn-inner">
 																<div className="valign-wrapper">
-																	<i className="material-icons left">done</i>Update
+																<i className="material-icons left">add</i>Add
 																</div>
 															</div>
 														</Button>
@@ -688,7 +688,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn left waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Select file...</span>
+																		<span><i className="material-icons left">publish</i>Select file</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -757,7 +757,7 @@ export default function Technologies() {
 																<div className="col s3">
 																	<div className="file-field input-field">
 																		<div className="btn teal right waves-effect waves-light">
-																			<span><i className="material-icons left">publish</i>Select file...</span>
+																			<span><i className="material-icons left">publish</i>Select file</span>
 																			<input type="file" />
 																		</div>
 																		<div className="file-path-wrapper">
@@ -841,7 +841,7 @@ export default function Technologies() {
 															onClick={ () => {console.log('Clicked!')} }>
 															<div className="btn-inner">
 																<div className="valign-wrapper">
-																	<i className="material-icons left">done</i>Update
+																<i className="material-icons left">add</i>Add
 																</div>
 															</div>
 														</Button>
@@ -860,7 +860,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn left waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Select file...</span>
+																		<span><i className="material-icons left">publish</i>Select file</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -929,7 +929,7 @@ export default function Technologies() {
 																<div className="col s3">
 																	<div className="file-field input-field">
 																		<div className="btn teal right waves-effect waves-light">
-																			<span><i className="material-icons left">publish</i>Select file...</span>
+																			<span><i className="material-icons left">publish</i>Select file</span>
 																			<input type="file" />
 																		</div>
 																		<div className="file-path-wrapper">
@@ -1013,7 +1013,7 @@ export default function Technologies() {
 															onClick={ () => {console.log('Clicked!')} }>
 															<div className="btn-inner">
 																<div className="valign-wrapper">
-																	<i className="material-icons left">done</i>Update
+																	<i className="material-icons left">add</i>Add
 																</div>
 															</div>
 														</Button>
@@ -1032,7 +1032,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn left waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Select file...</span>
+																		<span><i className="material-icons left">publish</i>Select file</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -1075,7 +1075,7 @@ export default function Technologies() {
 									onClick={ () => {console.log('Clicked!')} }>
 									<div className="btn-inner">
 										<div className="valign-wrapper">
-											<i className="material-icons left">done</i>Update
+											<i className="material-icons left">add</i>Add
 										</div>
 									</div>
 								</Button>
