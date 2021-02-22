@@ -474,8 +474,8 @@ export default function Technologies() {
 									<div className="center-align add-technology-btn row">
 										<div className="col">
 										<Modal
-												header={`Add new industry`} className="center-align"
-												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add industry</a>}
+												header={`Add new technology`} className="center-align"
+												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add technology</a>}
 												actions={[
 													<div className="center-align">
 														<Button 
@@ -515,7 +515,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn left waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Choose file...</span>
+																		<span><i className="material-icons left">publish</i>Select file...</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -647,8 +647,8 @@ export default function Technologies() {
 									<div className="center-align add-technology-btn row">
 										<div className="col">
 										<Modal
-												header={`Add new industry`} className="center-align"
-												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add industry</a>}
+												header={`Add new technology`} className="center-align"
+												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add technology</a>}
 												actions={[
 													<div className="center-align">
 														<Button 
@@ -688,7 +688,7 @@ export default function Technologies() {
 															<div className="col s3">
 																<div className="file-field input-field">
 																	<div className="btn left waves-effect waves-light">
-																		<span><i className="material-icons left">publish</i>Choose file...</span>
+																		<span><i className="material-icons left">publish</i>Select file...</span>
 																		<input type="file" />
 																	</div>
 																	<div className="file-path-wrapper">
@@ -819,8 +819,8 @@ export default function Technologies() {
 									<div className="center-align add-technology-btn row">
 										<div className="col">
 										<Modal
-												header={`Add new industry`} className="center-align"
-												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add industry</a>}
+												header={`Add new technology`} className="center-align"
+												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add technology</a>}
 												actions={[
 													<div className="center-align">
 														<Button 
@@ -991,8 +991,8 @@ export default function Technologies() {
 									<div className="center-align add-technology-btn row">
 										<div className="col">
 											<Modal
-												header={`Add new industry`} className="center-align"
-												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add industry</a>}
+												header={`Add new technology`} className="center-align"
+												trigger={<a href="#" className="btn indigo darken-1 waves-effect waves-light"><i className="material-icons left">add_circle_outline</i>Add technology</a>}
 												actions={[
 													<div className="center-align">
 														<Button 

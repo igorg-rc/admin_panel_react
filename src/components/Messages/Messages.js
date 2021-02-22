@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Pagination, Icon } from 'react-materialize'
+import { TablePagination } from 'react-pagination-table'
+
+import { data, Header } from './MessagesData'
+
 import './Messages.css'
 
+
+
 export default function Messages() {
+
 	return (
 		<div id="messages" style={{ paddingTop: '75px', paddingLeft: '' }}>
 			<div className="" style={{ height: '100vh' }}>
@@ -10,9 +17,22 @@ export default function Messages() {
 				<div className="col s12 indigo darken-1">
 					<div><span className="category-title left white-text">Income messages</span></div>
 				</div>
-				<div className="col s12 m3" style={{ paddingTop: '1.5vh' }}>
-				
-				{/* <Pagination
+				<div className="col s12 m5" style={{ paddingTop: '1.5vh' }}>
+
+				<div>
+					<TablePagination
+					className="left"
+							headers={ Header }
+							data={ data }
+							columns="name.time.date"
+							perPageItemCount={ 20 }
+							totalCount={ data.length }
+							arrayOption={ [["size"]] }
+					/>
+				</div>
+	
+{/* 				
+				<Pagination
 					target="#messages"
 					activePage={3}
 					items={5}
@@ -20,7 +40,7 @@ export default function Messages() {
 					rightBtn={<Icon>chevron_right</Icon>}
 				/> */}
 
-				<ul class="pagination">
+				{/* <ul class="pagination">
 					<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
 					<li class="active"><a href="#!">1</a></li>
 					<li class="waves-effect"><a href="#!">2</a></li>
@@ -28,9 +48,9 @@ export default function Messages() {
 					<li class="waves-effect"><a href="#!">4</a></li>
 					<li class="waves-effect"><a href="#!">5</a></li>
 					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-				</ul>
+				</ul> */}
 
-					<table id="messages">
+					{/* <table id="messages">
 						<tbody>
 							<tr style={{ fontWeight: 'bold' }}>
 								<td>Homer</td>
@@ -39,12 +59,12 @@ export default function Messages() {
 							</tr>
 							<tr style={{ fontWeight: 'bold' }}>
 								<td>Bart</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 9</td>
 							</tr>
 							<tr style={{ fontWeight: 'bold' }}>
 								<td>Lisa</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 9</td>
 							</tr>
 							<tr className="teal-text">
@@ -54,12 +74,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Krusty</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 8</td>
 							</tr>
 							<tr>
 								<td>Lisa</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 8</td>
 							</tr>
 							<tr>
@@ -69,12 +89,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 7</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 6</td>
 							</tr>
 							<tr>
@@ -84,12 +104,12 @@ export default function Messages() {
 							</tr>
 							<tr className="">
 								<td>Bart</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 6</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 6</td>
 							</tr>
 							<tr>
@@ -99,12 +119,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:44</td>
+								<td>03:44</td>
 								<td>Feb 5</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 5</td>
 							</tr>
 
@@ -115,12 +135,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:44</td>
+								<td>03:44</td>
 								<td>Feb 5</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 5</td>
 							</tr><tr>
 								<td>Meggie</td>
@@ -129,12 +149,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:44</td>
+								<td>03:44</td>
 								<td>Feb 5</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 5</td>
 							</tr>
 
@@ -145,12 +165,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 5</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 5</td>
 							</tr>
 
@@ -161,12 +181,12 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 5</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 5</td>
 							</tr>
 
@@ -177,23 +197,23 @@ export default function Messages() {
 							</tr>
 							<tr>
 								<td>Bart</td>
-								<td>3:45</td>
+								<td>03:45</td>
 								<td>Feb 5</td>
 							</tr>
 							<tr>
 								<td>Nilson</td>
-								<td>6:43</td>
+								<td>06:43</td>
 								<td>Feb 5</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> */}
 					
 				</div>
-				<div className="col s12 m9">
+				<div className="col s12 m7">
 						<div className="" style={{ height: '100vh', paddingTop: '1vh',  textAlign: 'justify' }}>
 							<div className="row">
 								<div className="col s6">
-									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer Simpson </span><span>homer.simpson@us.tv</span></h6>
+									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer </span><span>homer.simpson@us.tv</span></h6>
 								</div>
 								<div className="col s6 right">
 									<h6 className="right-align"><span>Feb 8, 2020, 03:03 AM</span></h6>
