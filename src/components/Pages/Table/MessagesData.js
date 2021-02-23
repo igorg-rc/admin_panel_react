@@ -1,4 +1,21 @@
-export const Header = [ "Name", "Time", "Date" ];
+export const columns = [
+  {
+    name: "Name",
+    selector: "name",
+    sortable: true
+  },
+  {
+    name: "Time",
+    selector: "time",
+    sortable: true
+  },
+  {
+    name: "Date",
+    selector: "date",
+    sortable: true,
+    right: true
+  }
+];
 
 export const data = [
   { name: "Bart", time: "18:45", date: "21 Feb 2021"},

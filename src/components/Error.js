@@ -1,24 +1,47 @@
-import React from 'react'
-import { technologies } from '../components/Pages/Technologies/TechnologiesData_'
-import { Button, Modal } from 'react-materialize'
+import React from "react";
+import DataTable from "react-data-table-component";
+import Card from "@material-ui/core/Card";
+import SortIcon from "@material-ui/icons/ArrowDownward";
+import "./Pages/Table/style.css";
+// import { data, columns } from './Pages/Table/MessagesData' 
+import data from './Pages/Table/MoviesData'
+
+
+const columns = [
+  {
+    name: "Title",
+    selector: "title",
+    sortable: false
+  },
+  {
+    name: "Directior",
+    selector: "director",
+    sortable: false
+  },
+  {
+    name: "Runtime (m)",
+    selector: "runtime",
+    sortable: false,
+    right: true
+  }
+];
 
 export default function Error() {
 
-	// const list = Object.values(technologies).map(i => {
-	// 	console.log(i.title)
-	// 	return `${i.title}: ${JSON.stringify(i.details)}`, Object.values(i.details).map(technology => {
-	// 		console.log(technology);
-	// 		return <ul><li>{ technology }</li></ul>
-	// 	}); 
-	// })
-
- // =============== Close solution ========================
-
- 
 	return (
 		<div>
 			<h1>Ooops! Requsted page does not exist.</h1>
-
+      <Card>
+        <DataTable
+          title="Movies"
+          columns={columns}
+          data={data}
+          defaultSortField="title"
+          sortIcon={<SortIcon />}
+          pagination
+          selectableRows
+        />
+      </Card>
 		</div>
 	)
 }

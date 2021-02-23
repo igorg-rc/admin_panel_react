@@ -1,14 +1,55 @@
 import React, { useState, useEffect } from 'react'
 import { Pagination, Icon } from 'react-materialize'
-import { TablePagination } from 'react-pagination-table'
-
-import { data, Header } from './MessagesData'
+import DataTable from 'react-data-table-component'
+// import { TablePagination } from 'react-pagination-table'
+import  {columns, data} from '../Pages/Table/MessagesData'
+// import { data, Header } from './MessagesData'
 
 import './Messages.css'
 
 
+const customStyles = {
+  title: {
+    style: {
+			background: 'tranparent',
+      fontColor: 'red !important',
+      fontWeight: '400',
+    }
+  },
+  rows: {
+    style: {
+      minHeight: '32px', // override the row height
+			background: 'transparent'
+    }
+  },
+  headCells: {
+    style: {
+      fontSize: '16px',
+      fontWeight: '500',
+      textTransform: 'uppercase',
+      paddingLeft: '0 8px',
+			background: '#f5f5f5',
+			paddingTop: '10px'
+    },
+  },
+  cells: {
+    style: {
+      fontSize: '16px',
+      paddingLeft: '0 8px',
+			background: '#f5f5f5'
+    },
+  },
+	input: {
+		style: {
+			display: 'none'
+		}
+	}
+
+};
+
 
 export default function Messages() {
+	const [perPage, setPerPage] = useState(20);
 
 	return (
 		<div id="messages" style={{ paddingTop: '75px', paddingLeft: '' }}>
@@ -19,16 +60,30 @@ export default function Messages() {
 				</div>
 				<div className="col s12 m5" style={{ paddingTop: '1.5vh' }}>
 
-				<div>
-					<TablePagination
-					className="left"
-							headers={ Header }
-							data={ data }
-							columns="name.time.date"
-							perPageItemCount={ 20 }
-							totalCount={ data.length }
-							arrayOption={ [["size"]] }
-					/>
+				<div className="left" style={{ width: '100%' }}>
+					{/* <TablePagination
+						columns="name.time.date"
+						perPageItemCount={ 20 }
+						totalCount={ data.length  }
+						arrayOption={ [["size", 'all', ', ']] }
+						className="left"
+						data={ data }
+						headers={ Header }
+					/> */}
+
+					<DataTable
+						// title="Messages"
+						className="paginate-table"
+						paginationPerPage={perPage}
+						style={{ marginTop: '-1.2vh' }}
+						columns={columns}
+						data={data}
+						defaultSortField="title"
+						// sortIcon={<SortIcon />}
+						pagination
+						selectableRows
+						customStyles={customStyles}
+					/>	
 				</div>
 	
 {/* 				
@@ -50,167 +105,9 @@ export default function Messages() {
 					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
 				</ul> */}
 
-					{/* <table id="messages">
-						<tbody>
-							<tr style={{ fontWeight: 'bold' }}>
-								<td>Homer</td>
-								<td>03:13</td>
-								<td>Feb 9</td>
-							</tr>
-							<tr style={{ fontWeight: 'bold' }}>
-								<td>Bart</td>
-								<td>03:45</td>
-								<td>Feb 9</td>
-							</tr>
-							<tr style={{ fontWeight: 'bold' }}>
-								<td>Lisa</td>
-								<td>06:43</td>
-								<td>Feb 9</td>
-							</tr>
-							<tr className="teal-text">
-								<td>Homer</td>
-								<td>03:13</td>
-								<td>Feb 8</td>
-							</tr>
-							<tr>
-								<td>Krusty</td>
-								<td>03:45</td>
-								<td>Feb 8</td>
-							</tr>
-							<tr>
-								<td>Lisa</td>
-								<td>06:43</td>
-								<td>Feb 8</td>
-							</tr>
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 7</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:45</td>
-								<td>Feb 7</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 6</td>
-							</tr>
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 6</td>
-							</tr>
-							<tr className="">
-								<td>Bart</td>
-								<td>03:45</td>
-								<td>Feb 6</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 6</td>
-							</tr>
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:44</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 5</td>
-							</tr>
-
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:44</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 5</td>
-							</tr><tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:44</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 5</td>
-							</tr>
-
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:45</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 5</td>
-							</tr>
-
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:45</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 5</td>
-							</tr>
-
-							<tr>
-								<td>Meggie</td>
-								<td>03:11</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Bart</td>
-								<td>03:45</td>
-								<td>Feb 5</td>
-							</tr>
-							<tr>
-								<td>Nilson</td>
-								<td>06:43</td>
-								<td>Feb 5</td>
-							</tr>
-						</tbody>
-					</table> */}
-					
 				</div>
 				<div className="col s12 m7">
-						<div className="" style={{ height: '100vh', paddingTop: '1vh',  textAlign: 'justify' }}>
+						<div className="" style={{ height: '100vh', paddingTop: '2.7vh',  textAlign: 'justify' }}>
 							<div className="row">
 								<div className="col s6">
 									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer </span><span>homer.simpson@us.tv</span></h6>

@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Technologies from './components/Pages/Technologies/Technologies';
 import Industries from './components/Pages/Industries/Industries';
 import Messages from './components/Messages/Messages';
+import Table from './components/Pages/Table/Table';
 import Error from './components/Error';
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
               <Route path="/technologies" component={Technologies} />
               <Route path="/industries" component={Industries} />
               <Route path="/messages" component={Messages} />
+              <Route path="/table" component={Table} />
+
               <Route component={Error} />
             </Switch>
           </main>
