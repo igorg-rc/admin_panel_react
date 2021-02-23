@@ -33,7 +33,7 @@ export default function Error() {
 			<h1>Ooops! Requsted page does not exist.</h1>
 			<div className="table-holder" style={{ display: 'flex', flexDirection: 'column-reverse' }}>
 		
-					<DataTable
+					{/* <DataTable
             className="Table"
 						columns={columns}
 						data={data}
@@ -41,7 +41,7 @@ export default function Error() {
 						sortIcon={<SortIcon />}
 						pagination
 						selectableRows
-					/>
+					/> */}
 			
 			</div>
 		</div>
