@@ -10,14 +10,17 @@
 
 th.th-img {
   width: 7% !important;
+  font-weight: 700;
 }
 
 th.th-title {
   margin-left: 1.6vw;
+  font-weight: 700;
 }
 
 th.th-actions {
   margin-right: 1.3vh !important;
+  font-weight: 700;
 }
 
 td.td-title {

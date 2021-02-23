@@ -9,7 +9,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, setPrevPage, setNextPa
   }
 
   
-
   return (
     <>
       <div className='pagination'>

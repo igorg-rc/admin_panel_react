@@ -27,9 +27,8 @@ const customStyles = {
     style: {
       fontSize: '16px',
       fontWeight: '500',
-      textTransform: 'uppercase',
       paddingLeft: '0 8px',
-			background: '#f5f5f5',
+			background: '#f5f5f5 !important',
 			paddingTop: '10px'
     },
   },
@@ -37,7 +36,6 @@ const customStyles = {
     style: {
       fontSize: '16px',
       paddingLeft: '0 8px',
-			background: 'transparent !important'
     },
   },
 	
@@ -113,7 +111,7 @@ export default function Messages() {
 						<div className="" style={{ height: '100vh', paddingTop: '1.5vh',  textAlign: 'justify' }}>
 							<div className="row">
 								<div className="col s6">
-									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer </span><span>homer.simpson@us.tv</span></h6>
+									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer </span><span style={{ color: '#757575', fontSize: '1rem' }}>&lt;homer.simpson@us.tv&gt;</span></h6>
 								</div>
 								<div className="col s6 right">
 									<h6 className="right-align"><span>Feb 8, 2020, 03:03 AM</span></h6>

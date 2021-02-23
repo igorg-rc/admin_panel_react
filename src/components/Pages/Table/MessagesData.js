@@ -2,12 +2,12 @@ export const columns = [
   {
     name: "Name",
     selector: "name",
-    sortable: true
+    sortable: false
   },
   {
     name: "Date",
     selector: "date",
-    sortable: true,
+    sortable: false,
     right: true
   }
 ];
