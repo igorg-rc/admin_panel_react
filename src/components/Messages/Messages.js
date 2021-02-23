@@ -4,6 +4,7 @@ import DataTable from 'react-data-table-component'
 // import { TablePagination } from 'react-pagination-table'
 import  {columns, data} from '../Pages/Table/MessagesData'
 // import { data, Header } from './MessagesData'
+import SortIcon from "@material-ui/icons/ArrowDownward"
 
 import './Messages.css'
 
@@ -11,7 +12,7 @@ import './Messages.css'
 const customStyles = {
   title: {
     style: {
-			background: 'tranparent',
+			background: '#f5f5f5',
       fontColor: 'red !important',
       fontWeight: '400',
     }
@@ -19,7 +20,7 @@ const customStyles = {
   rows: {
     style: {
       minHeight: '32px', // override the row height
-			background: 'transparent'
+			background: '#f5f5f5'
     }
   },
   headCells: {
@@ -36,9 +37,10 @@ const customStyles = {
     style: {
       fontSize: '16px',
       paddingLeft: '0 8px',
-			background: '#f5f5f5'
+			background: 'transparent !important'
     },
   },
+	
 	input: {
 		style: {
 			display: 'none'
@@ -73,14 +75,13 @@ export default function Messages() {
 
 					<div style={{ display: 'flex', flexDirection: 'column-reverse', marginTop: '-1.5vh' }}>
 						<DataTable
-							// title="Messages"
 							className="paginate-table"
 							paginationPerPage={perPage}
-							style={{ marginTop: '-0.7vh' }}
+							style={{  }}
 							columns={columns}
 							data={data}
 							defaultSortField="title"
-							// sortIcon={<SortIcon />}
+							sortIcon={<SortIcon />}
 							pagination
 							selectableRows
 							customStyles={customStyles}

@@ -5,7 +5,7 @@ import SortIcon from "@material-ui/icons/ArrowDownward";
 import "./Pages/Table/style.css";
 // import { data, columns } from './Pages/Table/MessagesData' 
 import data from './Pages/Table/MoviesData'
-
+import './Pages/Table/style.css'
 
 const columns = [
   {
@@ -34,7 +34,7 @@ export default function Error() {
 			<div className="table-holder" style={{ display: 'flex', flexDirection: 'column-reverse' }}>
 		
 					{/* <DataTable
-						title="Movies"
+            className="Table"
 						columns={columns}
 						data={data}
 						defaultSortField="title"

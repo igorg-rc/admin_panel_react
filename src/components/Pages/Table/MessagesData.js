@@ -4,11 +4,6 @@ export const columns = [
     selector: "name",
     sortable: true
   },
-  // {
-  //   name: "Time",
-  //   selector: "time",
-  //   sortable: true
-  // },
   {
     name: "Date",
     selector: "date",

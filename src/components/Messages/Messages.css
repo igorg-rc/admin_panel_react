@@ -13,7 +13,7 @@ ul.pagination li a:hover {
 
 /* pagination */
 
-.react-pagination-table {
+.paginate-table {
   position: relative;
   color: red;
   border-radius: 3px;
@@ -50,8 +50,8 @@ ul.pagination li a:hover {
 } */
 
 table, .pagination-status {
-  /* display: flex; */
-  /* flex-direction: column-reverse; */
+  /* display: flex;
+  flex-direction: column-reverse; */
 }
 
 .pagination-status {
@@ -67,16 +67,28 @@ table {
   color: #3949ab;
 }
 
-span.gdMBZx, span.gaMRwo {
-  visibility: hidden !important;
-}
 
-nav select {
+/* hidden elements */
+.sc-kLgntA, .gaMRwo {
   display: none;
 }
+
+.sc-cxFLnm, .eHxVgR {
+  display: none;
+}
+
+.sc-iwyYcG, .fFngYM {
+  display: none;
+}
+
+span.gdMBZx, span.gaMRwo {
+  /* visibility: hidden !important; */
+}
+
+
 
 div.sc-cxFLnm, span.gdMBZx, span.gaMRwo  {
-  display: none;
+  /* display: none; */
 }
 
 nav {
@@ -85,30 +97,31 @@ nav {
   height: 0.5vh !important;
   border: none !important;
   box-shadow: none;
-  text-align: center !important;
+  text-align: left !important;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 
-div.sc-giIncl {
-  text-align: center !important;
+.rdt_Table {
+  margin-top: -0.5vh;
 }
 
-div.bMvrds {
-  text-align: center !important;
-}
 
 button#pagination-previouspage {
   color: red !important;
 }
 
+/* #cell:hover {
+  color: red !important;
+  cursor: pointer !important;
+  border: 1px solid black !important;
+} */
 
-nav i {
-  display: none;
-}
-
-div.sc-fodVxV {
- display: none;
+.rdt_TableRow:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #009688;
+  text-decoration: underline;
 }
 
 
