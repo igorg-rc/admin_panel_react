@@ -31,7 +31,7 @@ export default function Error() {
 	return (
 		<div>
 			<h1>Ooops! Requsted page does not exist.</h1>
-      <Card>
+      {/* <Card>
         <DataTable
           title="Movies"
           columns={columns}
@@ -41,7 +41,7 @@ export default function Error() {
           pagination
           selectableRows
         />
-      </Card>
+      </Card> */}
 		</div>
 	)
 }
