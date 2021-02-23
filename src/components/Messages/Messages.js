@@ -71,19 +71,21 @@ export default function Messages() {
 						headers={ Header }
 					/> */}
 
-					<DataTable
-						// title="Messages"
-						className="paginate-table"
-						paginationPerPage={perPage}
-						style={{ marginTop: '-1.2vh' }}
-						columns={columns}
-						data={data}
-						defaultSortField="title"
-						// sortIcon={<SortIcon />}
-						pagination
-						selectableRows
-						customStyles={customStyles}
-					/>	
+					<div style={{ display: 'flex', flexDirection: 'column-reverse', marginTop: '-1.5vh' }}>
+						<DataTable
+							// title="Messages"
+							className="paginate-table"
+							paginationPerPage={perPage}
+							style={{ marginTop: '-0.7vh' }}
+							columns={columns}
+							data={data}
+							defaultSortField="title"
+							// sortIcon={<SortIcon />}
+							pagination
+							selectableRows
+							customStyles={customStyles}
+						/>
+					</div>	
 				</div>
 	
 {/* 				
@@ -107,7 +109,7 @@ export default function Messages() {
 
 				</div>
 				<div className="col s12 m7">
-						<div className="" style={{ height: '100vh', paddingTop: '2.7vh',  textAlign: 'justify' }}>
+						<div className="" style={{ height: '100vh', paddingTop: '1.5vh',  textAlign: 'justify' }}>
 							<div className="row">
 								<div className="col s6">
 									<h6 className="left-align">From:<span style={{ fontWeight: '700' }}> Homer </span><span>homer.simpson@us.tv</span></h6>
