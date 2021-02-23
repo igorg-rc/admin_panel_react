@@ -58,7 +58,7 @@ export default function Messages() {
 				<div className="col s12 indigo darken-1">
 					<div><span className="category-title left white-text">Income messages</span></div>
 				</div>
-				<div className="col s12 m5" style={{ paddingTop: '1.5vh' }}>
+				<div className="col s12 m5" style={{ paddingTop: '1.5vh'}}>
 
 				<div className="left" style={{ width: '100%' }}>
 					{/* <TablePagination
@@ -111,8 +111,10 @@ export default function Messages() {
 						<div className="" style={{ height: '100vh', paddingTop: '1.5vh',  textAlign: 'justify' }}>
 							<div className="row">
 								<div className="col s8">
-									<h6 className="left-align"><span style={{ fontWeight: '700' }}> Alexandra Copos de Prada
- </span><span style={{ color: '#757575', fontSize: '1rem' }}> &lt;alexandra.copos.prada@gmail.com&gt; </span></h6>
+									<h6 className="left-align">
+										<span style={{ fontWeight: '700' }}> Alexandra Copos de Prada</span>
+										<span style={{ color: '#757575', fontSize: '1rem' }}> &lt;alexandra.copos@gmail.com&gt;</span>
+									</h6>
 								</div>
 								<div className="col s4 right">
 									<h6 className="right-align"><span>Feb 8, 2020, 03:03 AM</span></h6>

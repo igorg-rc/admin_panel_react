@@ -116,16 +116,11 @@ button#pagination-previouspage {
   color: red !important;
 }
 
+/* Name column align left without additional space! */
 .kMXuPO {
   text-align: left !important;
   left: -1.8vw;
 }
-
-/* #cell:hover {
-  color: red !important;
-  cursor: pointer !important;
-  border: 1px solid black !important;
-} */
 
 .rdt_TableRow:hover {
   color: white;
@@ -136,7 +131,7 @@ button#pagination-previouspage {
 
 
 /* Old pagination settings */
-.pagination-status__item {
+/* .pagination-status__item {
   display: inline;
 }
 
@@ -170,4 +165,4 @@ button#pagination-previouspage {
   border-color: #d0d0d0;
   background-color: #fff;
   cursor: not-allowed;
-}
+} */
