@@ -23,6 +23,7 @@ export default function Table() {
 
     fetchPosts();
   }, []);
+  
 
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
@@ -32,7 +33,7 @@ export default function Table() {
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   const setNextPage = (pageNumber) => setCurrentPage(pageNumber + 1);
-  const setPrevPage = (pageNumber) => setCurrentPage(pageNumber + 1);
+  const setPrevPage = (pageNumber) => setCurrentPage(pageNumber - 1);
 
   return (
     <div>
@@ -41,6 +42,8 @@ export default function Table() {
       <Pagination 
         postsPerPage={postsPerPage} 
         totalPosts={posts.length} 
+        setNextPage={setNextPage}
+        setPrevPage={setPrevPage}
         paginate={paginate}
       />
       <Posts posts={currnentPosts} loading={loading} />

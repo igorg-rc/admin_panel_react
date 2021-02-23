@@ -68,7 +68,7 @@ table {
 }
 
 span.gdMBZx, span.gaMRwo {
-  /* visibility: hidden !important; */
+  visibility: hidden !important;
 }
 
 nav select {

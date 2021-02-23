@@ -1,7 +1,7 @@
   
 import React from 'react';
 
-const Pagination = ({ postsPerPage, totalPosts, paginate, setNextPage }) => {
+const Pagination = ({ postsPerPage, totalPosts, paginate, setPrevPage, setNextPage }) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
@@ -13,7 +13,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, setNextPage }) => {
   return (
     <>
       <div className='pagination'>
-        <a className="next-page__link" onClick={()=> setNextPage(1)}>Next</a>
+        <a className="next-page__link" onClick={()=> setPrevPage(1)}>Prev</a>
         <ul>
           {pageNumbers.map(number => (
             <li key={number} className='page-item'>
@@ -23,6 +23,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, setNextPage }) => {
             </li>
           ))}
         </ul>
+        <a className="next-page__link" onClick={()=> setNextPage(1)}>Next</a>
       </div>
     </>
   );
