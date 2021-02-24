@@ -19,13 +19,14 @@ export default function Login () {
 
 
             <form class="">
-              <div class="row">
+              <div className="row">
                 <div class="input-field col s10 offset-s1">
                   <i class="material-icons prefix">account_circle</i>
-                  <input id="login" type="text" name="login" />
-                  <label for="login">Login</label>
+                  <input id="username" type="text" name="username" />
+                  <label for="username">Login</label>
                 </div>
               </div>
+
 
               <div className="row">
                 <div class="input-field col s10 offset-s1">
@@ -35,6 +36,7 @@ export default function Login () {
                 </div>
               </div>
 
+            
               <div className="form-links">
                 <div className="row">
                   <div className="col s6 left">
