@@ -62,9 +62,11 @@ table, .pagination-status {
   
 }
 
-table {
-  background-color: #f5f5f5 !important;
-  color: #3949ab;
+/* !!! */
+.sc-kfzAmx, .bdkqKp {
+  background-color: red !important;
+  color: #3949ab !important;
+  /* border: 1px solid red !important; */
 }
 
 
@@ -81,11 +83,11 @@ table {
   display: none;
 }
 
-nav {
-  padding-top: 2vh;
-  background: #f5f5f5 !important;
+nav.sc-lmoMRL {
+  padding: 2vh;
+  background: transparent !important;
   height: 0.5vh !important;
-  border: none !important;
+  border: #f5f5f5 !important;
   box-shadow: none;
   text-align: left !important;
   display: flex;
@@ -93,8 +95,7 @@ nav {
 }
 
 .rdt_Table {
-  margin-top: -0.5vh;
-  background-color:  #f5f5f5 !important;
+  background:  #f5f5f5 !important;
   border: 1px solid #f5f5f5 !important;
 }
 
@@ -107,7 +108,7 @@ nav {
 }
 
 #column-date  {
-  margin-right: 1.78vw;
+  margin-right: 2vw;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -118,17 +119,30 @@ button#pagination-previouspage {
 
 /* Name column align left without additional space! */
 .kMXuPO {
-  text-align: left !important;
-  left: -1.8vw;
+  left: -1.4vw !important;
+  /* border: 1px solid black; */
+}
+
+.dVQtMr {
+  background-color: 1px solid #f5f5f5;
+  /* border: 1px solid black; */
+}
+
+.rdt_TableRow {
+  border-right: 0px solid #f5f5f5;
 }
 
 .rdt_TableRow:hover {
-  color: white;
+  color: #f5f5f5;
   cursor: pointer;
-  background-color: #009688;
+  background-color: #009688 !important;
 }
 
 
+/* Message settings */
+h6.message-info {
+  margin: 1.3vh 0 1vh 0 !important;
+}
 
 /* Old pagination settings */
 /* .pagination-status__item {

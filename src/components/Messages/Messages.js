@@ -13,7 +13,6 @@ const customStyles = {
   title: {
     style: {
 			background: '#f5f5f5',
-      fontColor: 'red !important',
       fontWeight: '400',
     }
   },
@@ -49,7 +48,7 @@ const customStyles = {
 
 
 export default function Messages() {
-	const [perPage, setPerPage] = useState(20);
+	const [perPage, setPerPage] = useState(10);
 
 	return (
 		<div id="messages" style={{ paddingTop: '75px', paddingLeft: '' }}>
@@ -58,7 +57,7 @@ export default function Messages() {
 				<div className="col s12 indigo darken-1">
 					<div><span className="category-title left white-text">Income messages</span></div>
 				</div>
-				<div className="col s12 m5" style={{ paddingTop: '1.5vh'}}>
+				<div className="col s12 m4 l4" style={{ paddingTop: '1.5vh'}}>
 
 				<div className="left" style={{ width: '100%' }}>
 					{/* <TablePagination
@@ -71,11 +70,11 @@ export default function Messages() {
 						headers={ Header }
 					/> */}
 
-					<div style={{ display: 'flex', flexDirection: 'column-reverse', marginTop: '-1.5vh' }}>
+					<div style={{ display: 'flex', flexDirection: 'column-reverse', marginTop: '-1.5vh', border: '' }}>
 						<DataTable
 							className="paginate-table"
 							paginationPerPage={perPage}
-							style={{  }}
+							// style={{ border: '1px solid green'}}
 							columns={columns}
 							data={data}
 							defaultSortField="title"
@@ -107,19 +106,18 @@ export default function Messages() {
 				</ul> */}
 
 				</div>
-				<div className="col s12 m7">
-						<div className="" style={{ height: '100vh', paddingTop: '1.5vh',  textAlign: 'justify' }}>
+				<div className="col s12 m8 l8">
+						<div className="" style={{ height: '100vh', paddingTop: '1.3vh',  textAlign: 'justify' }}>
 							<div className="row">
-								<div className="col s8">
-									<h6 className="left-align">
+								<div className="col s12">
+									<h6 className="left-align message-info">
 										<span style={{ fontWeight: '700' }}> Alexandra Copos de Prada</span>
-										<span style={{ color: '#757575', fontSize: '1rem' }}> &lt;alexandra.copos@gmail.com&gt;</span>
+										<span style={{ color: '#757575', fontSize: '1rem' }}> &lt;alexandra.copos@gmail.com&gt;</span><br />
+										<span style={{ color: '#757575', fontSize: '1rem' }}>Feb 8, 2021, 03:03 AM</span>
 									</h6>
 								</div>
-								<div className="col s4 right">
-									<h6 className="right-align"><span>Feb 8, 2020, 03:03 AM</span></h6>
-								</div>
 							</div>
+							
 							<span id="message">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, 
 							making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, 
 							consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum 
