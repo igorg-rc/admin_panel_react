@@ -48,7 +48,7 @@ const customStyles = {
 
 
 export default function Messages() {
-	const [perPage, setPerPage] = useState(10);
+	const [perPage, setPerPage] = useState(15);
 
 	return (
 		<div id="messages" style={{ paddingTop: '75px', paddingLeft: '' }}>

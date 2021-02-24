@@ -1,0 +1,63 @@
+.logo-handler {
+  padding-top: 3vh !important;
+}
+
+
+.logo-handler img {
+  width: 3.5vw;
+}
+
+
+
+
+
+.form-wrapper {
+  padding-top: 3vh !important;
+}
+
+
+
+.form-wrapper form {
+  padding: 5vh 0;
+}
+
+.form-wrapper form label, 
+.form-wrapper form input,
+i.material-icons:focus {
+  color: white !important;
+  background: transparent !important;
+}
+
+.form-wrapper label:focus,
+i.active {
+  color: white !important;
+  background: transparent !important;
+}
+
+ /* label focus color */
+ .form-wrapper .input-field input[type=text]:focus + label,
+ .form-wrapper .input-field input[type=password]:focus + label {
+  color: white !important;
+  
+}
+/* label underline focus color */
+.form-wrapper .input-field input[type=text]:focus,
+.form-wrapper .input-field input[type=password]:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+
+.form-wrapper a {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.form-wrapper a:hover  {
+  background-color: white;
+  color: #3949ab !important;
+  border: 1px solid #c5cae9;
+}
+
+.form-wrapper a i:hover {
+  color: #3949ab !important;
+}
