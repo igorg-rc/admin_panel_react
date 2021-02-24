@@ -6,6 +6,7 @@ import "./Pages/Table/style.css";
 // import { data, columns } from './Pages/Table/MessagesData' 
 import data from './Pages/Table/MoviesData'
 import './Pages/Table/style.css'
+import Layout from './Layout/Layout'
 
 const columns = [
   {
@@ -30,6 +31,7 @@ export default function Error() {
 
 	return (
 		<div>
+      <Layout />
 			<h1>Ooops! Requsted page does not exist.</h1>
 
 		</div>

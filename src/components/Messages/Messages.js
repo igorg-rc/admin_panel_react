@@ -5,6 +5,7 @@ import DataTable from 'react-data-table-component'
 import  {columns, data} from '../Pages/Table/MessagesData'
 // import { data, Header } from './MessagesData'
 import SortIcon from "@material-ui/icons/ArrowDownward"
+import Layout from '../Layout/Layout'
 
 import './Messages.css'
 
@@ -51,7 +52,9 @@ export default function Messages() {
 	const [perPage, setPerPage] = useState(15);
 
 	return (
-		<div id="messages" style={{ paddingTop: '75px', paddingLeft: '' }}>
+		<>
+		<Layout />
+<div id="messages" style={{ paddingTop: '75px', paddingLeft: '' }}>
 			<div className="" style={{ height: '100vh' }}>
 			<div className="row">
 				<div className="col s12 indigo darken-1">
@@ -130,5 +133,8 @@ export default function Messages() {
 			</div>
 		</div>
 		</div>
-	)
+
+		</>
+
+			)
 }

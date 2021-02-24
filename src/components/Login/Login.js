@@ -6,14 +6,6 @@ export default function Login () {
   return (
     <div id="login" style={{ paddingTop: '75px', paddingLeft: '' }}>
       <div className="" style={{ height: '100vh' }}>
-        <div className="row">
-          <div className="col s12 indigo darken-1">
-            <div>
-              <span className="category-title left white-text">Login page</span>
-            </div>
-          </div>
-        </div>
-        
 
         <div class="row">
           <div className="col s6 offset-s3 form-wrapper indigo darken-1 white-text">

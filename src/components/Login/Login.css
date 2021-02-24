@@ -47,7 +47,7 @@ i.active {
   box-shadow: 0 1px 0 0 white !important;
 }
 
-.form-wrapper a {
+/* .form-wrapper a {
   background-color: transparent;
   border: 1px solid white;
 }
@@ -60,4 +60,4 @@ i.active {
 
 .form-wrapper a i:hover {
   color: #3949ab !important;
-}
+} */
