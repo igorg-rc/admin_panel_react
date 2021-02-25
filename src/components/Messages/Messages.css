@@ -11,6 +11,13 @@ ul.pagination li a:hover {
 } */
 
 
+/* Hide scrollbar */
+#messages {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 /* pagination */
 
 .paginate-table {
