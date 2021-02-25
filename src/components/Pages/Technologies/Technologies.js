@@ -21,18 +21,19 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="indigo darken-1 white-text center-align">
-												<i className="material-icons left card-icons">close</i>Cancel
+												className="teal white-text" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left card-icons">delete</i>Delete
 											</Button>
 											<Button 
 												flat 
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="teal white-text" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left card-icons">delete</i>Delete
+												className="indigo darken-1 white-text center-align">
+												<i className="material-icons left card-icons">close</i>Cancel
 											</Button>
+											
 										</div>
 									]}
 									header={`Delete "${technology.title}" item. Are you sure?`} className="center-align"
@@ -50,15 +51,6 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light"
-												className="indigo darken-1 white-text modal-actions" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left">close</i>Cancel
-											</Button>
-											<Button 
-												flat 
-												modal="close" 
-												node="button" 
-												waves="light"
 												className="teal white-text modal-actions" 
 												onClick={ () => {console.log('Clicked!')} }>
 												<div className="btn-inner">
@@ -67,6 +59,16 @@ export default function Technologies() {
 													</div>
 												</div>
 											</Button>
+											<Button 
+												flat 
+												modal="close" 
+												node="button" 
+												waves="light"
+												className="indigo darken-1 white-text modal-actions" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left">close</i>Cancel
+											</Button>
+											
 										</div>
 									]}>
 									<div className="center-align">
@@ -109,17 +111,17 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="indigo darken-1 white-text center-align">
-												<i className="material-icons left card-icons">close</i>Cancel
+												className="teal white-text" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left card-icons">delete</i>Delete
 											</Button>
 											<Button 
 												flat 
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="teal white-text" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left card-icons">delete</i>Delete
+												className="indigo darken-1 white-text center-align">
+												<i className="material-icons left card-icons">close</i>Cancel
 											</Button>
 										</div>
 									]}
@@ -138,15 +140,6 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light"
-												className="indigo darken-1 white-text modal-actions" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left">close</i>Cancel
-											</Button>
-											<Button 
-												flat 
-												modal="close" 
-												node="button" 
-												waves="light"
 												className="teal white-text modal-actions" 
 												onClick={ () => {console.log('Clicked!')} }>
 												<div className="btn-inner">
@@ -154,6 +147,15 @@ export default function Technologies() {
 														<i className="material-icons left">done</i>Update
 													</div>
 												</div>
+											</Button>
+											<Button 
+												flat 
+												modal="close" 
+												node="button" 
+												waves="light"
+												className="indigo darken-1 white-text modal-actions" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left">close</i>Cancel
 											</Button>
 										</div>
 									]}>
@@ -197,17 +199,17 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="indigo darken-1 white-text center-align">
-												<i className="material-icons left card-icons">close</i>Cancel
+												className="teal white-text" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left card-icons">delete</i>Delete
 											</Button>
 											<Button 
 												flat 
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="teal white-text" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left card-icons">delete</i>Delete
+												className="indigo darken-1 white-text center-align">
+												<i className="material-icons left card-icons">close</i>Cancel
 											</Button>
 										</div>
 									]}
@@ -226,15 +228,6 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light"
-												className="indigo darken-1 white-text modal-actions" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left">close</i>Cancel
-											</Button>
-											<Button 
-												flat 
-												modal="close" 
-												node="button" 
-												waves="light"
 												className="teal white-text modal-actions" 
 												onClick={ () => {console.log('Clicked!')} }>
 												<div className="btn-inner">
@@ -242,6 +235,15 @@ export default function Technologies() {
 														<i className="material-icons left">done</i>Update
 													</div>
 												</div>
+											</Button>
+											<Button 
+												flat 
+												modal="close" 
+												node="button" 
+												waves="light"
+												className="indigo darken-1 white-text modal-actions" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left">close</i>Cancel
 											</Button>
 										</div>
 									]}>
@@ -285,17 +287,17 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="indigo darken-1 white-text center-align">
-												<i className="material-icons left card-icons">close</i>Cancel
+												className="teal white-text" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left card-icons">delete</i>Delete
 											</Button>
 											<Button 
 												flat 
 												modal="close" 
 												node="button" 
 												waves="light" 
-												className="teal white-text" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left card-icons">delete</i>Delete
+												className="indigo darken-1 white-text center-align">
+												<i className="material-icons left card-icons">close</i>Cancel
 											</Button>
 										</div>
 									]}
@@ -314,15 +316,6 @@ export default function Technologies() {
 												modal="close" 
 												node="button" 
 												waves="light"
-												className="indigo darken-1 white-text modal-actions" 
-												onClick={ () => {console.log('Clicked!')} }>
-												<i className="material-icons left">close</i>Cancel
-											</Button>
-											<Button 
-												flat 
-												modal="close" 
-												node="button" 
-												waves="light"
 												className="teal white-text modal-actions" 
 												onClick={ () => {console.log('Clicked!')} }>
 												<div className="btn-inner">
@@ -330,6 +323,15 @@ export default function Technologies() {
 														<i className="material-icons left">done</i>Update
 													</div>
 												</div>
+											</Button>
+											<Button 
+												flat 
+												modal="close" 
+												node="button" 
+												waves="light"
+												className="indigo darken-1 white-text modal-actions" 
+												onClick={ () => {console.log('Clicked!')} }>
+												<i className="material-icons left">close</i>Cancel
 											</Button>
 										</div>
 									]}>
@@ -386,15 +388,6 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light"
-																			className="indigo darken-1 white-text modal-actions" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left">close</i>Cancel
-																		</Button>
-																		<Button 
-																			flat 
-																			modal="close" 
-																			node="button" 
-																			waves="light"
 																			className="teal white-text modal-actions" 
 																			onClick={ () => {console.log('Clicked!')} }>
 																			<div className="btn-inner">
@@ -402,6 +395,15 @@ export default function Technologies() {
 																					<i className="material-icons left">done</i>Update
 																				</div>
 																			</div>
+																		</Button>
+																		<Button 
+																			flat 
+																			modal="close" 
+																			node="button" 
+																			waves="light"
+																			className="indigo darken-1 white-text modal-actions" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left">close</i>Cancel
 																		</Button>
 																	</div>
 																]}>
@@ -437,17 +439,17 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light" 
-																			className="indigo darken-1 white-text center-align">
-																			<i className="material-icons left card-icons">close</i>Cancel
+																			className="teal white-text" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left card-icons">delete</i>Delete
 																		</Button>
 																		<Button 
 																			flat 
 																			modal="close" 
 																			node="button" 
 																			waves="light" 
-																			className="teal white-text" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left card-icons">delete</i>Delete
+																			className="indigo darken-1 white-text center-align">
+																			<i className="material-icons left card-icons">close</i>Cancel
 																		</Button>
 																	</div>
 																]}
@@ -487,15 +489,6 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light"
-																			className="indigo darken-1 white-text modal-actions" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left">close</i>Cancel
-																		</Button>
-																		<Button 
-																			flat 
-																			modal="close" 
-																			node="button" 
-																			waves="light"
 																			className="teal white-text modal-actions" 
 																			onClick={ () => {console.log('Clicked!')} }>
 																			<div className="btn-inner">
@@ -503,6 +496,15 @@ export default function Technologies() {
 																					<i className="material-icons left">add</i>Add
 																				</div>
 																			</div>
+																		</Button>
+																		<Button 
+																			flat 
+																			modal="close" 
+																			node="button" 
+																			waves="light"
+																			className="indigo darken-1 white-text modal-actions" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left">close</i>Cancel
 																		</Button>
 																	</div>
 																]}>
@@ -557,15 +559,6 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light"
-																			className="indigo darken-1 white-text modal-actions" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left">close</i>Cancel
-																		</Button>
-																		<Button 
-																			flat 
-																			modal="close" 
-																			node="button" 
-																			waves="light"
 																			className="teal white-text modal-actions" 
 																			onClick={ () => {console.log('Clicked!')} }>
 																			<div className="btn-inner">
@@ -573,6 +566,15 @@ export default function Technologies() {
 																					<i className="material-icons left">done</i>Update
 																				</div>
 																			</div>
+																		</Button>
+																		<Button 
+																			flat 
+																			modal="close" 
+																			node="button" 
+																			waves="light"
+																			className="indigo darken-1 white-text modal-actions" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left">close</i>Cancel
 																		</Button>
 																	</div>
 																]}>
@@ -608,17 +610,17 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light" 
-																			className="indigo darken-1 white-text center-align">
-																			<i className="material-icons left card-icons">close</i>Cancel
+																			className="teal white-text" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left card-icons">delete</i>Delete
 																		</Button>
 																		<Button 
 																			flat 
 																			modal="close" 
 																			node="button" 
 																			waves="light" 
-																			className="teal white-text" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left card-icons">delete</i>Delete
+																			className="indigo darken-1 white-text center-align">
+																			<i className="material-icons left card-icons">close</i>Cancel
 																		</Button>
 																	</div>
 																]}
@@ -660,15 +662,6 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light"
-																			className="indigo darken-1 white-text modal-actions" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left">close</i>Cancel
-																		</Button>
-																		<Button 
-																			flat 
-																			modal="close" 
-																			node="button" 
-																			waves="light"
 																			className="teal white-text modal-actions" 
 																			onClick={ () => {console.log('Clicked!')} }>
 																			<div className="btn-inner">
@@ -676,6 +669,15 @@ export default function Technologies() {
 																				<i className="material-icons left">add</i>Add
 																				</div>
 																			</div>
+																		</Button>
+																		<Button 
+																			flat 
+																			modal="close" 
+																			node="button" 
+																			waves="light"
+																			className="indigo darken-1 white-text modal-actions" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left">close</i>Cancel
 																		</Button>
 																	</div>
 																]}>
@@ -731,15 +733,6 @@ export default function Technologies() {
 																				modal="close" 
 																				node="button" 
 																				waves="light"
-																				className="indigo darken-1 white-text modal-actions" 
-																				onClick={ () => {console.log('Clicked!')} }>
-																				<i className="material-icons left">close</i>Cancel
-																			</Button>
-																			<Button 
-																				flat 
-																				modal="close" 
-																				node="button" 
-																				waves="light"
 																				className="teal white-text modal-actions" 
 																				onClick={ () => {console.log('Clicked!')} }>
 																				<div className="btn-inner">
@@ -747,6 +740,15 @@ export default function Technologies() {
 																						<i className="material-icons left">done</i>Update
 																					</div>
 																				</div>
+																			</Button>
+																			<Button 
+																				flat 
+																				modal="close" 
+																				node="button" 
+																				waves="light"
+																				className="indigo darken-1 white-text modal-actions" 
+																				onClick={ () => {console.log('Clicked!')} }>
+																				<i className="material-icons left">close</i>Cancel
 																			</Button>
 																		</div>
 																	]}>
@@ -782,17 +784,17 @@ export default function Technologies() {
 																				modal="close" 
 																				node="button" 
 																				waves="light" 
-																				className="indigo darken-1 white-text center-align">
-																				<i className="material-icons left card-icons">close</i>Cancel
+																				className="teal white-text" 
+																				onClick={ () => {console.log('Clicked!')} }>
+																				<i className="material-icons left card-icons">delete</i>Delete
 																			</Button>
 																			<Button 
 																				flat 
 																				modal="close" 
 																				node="button" 
 																				waves="light" 
-																				className="teal white-text" 
-																				onClick={ () => {console.log('Clicked!')} }>
-																				<i className="material-icons left card-icons">delete</i>Delete
+																				className="indigo darken-1 white-text center-align">
+																				<i className="material-icons left card-icons">close</i>Cancel
 																			</Button>
 																		</div>
 																	]}
@@ -832,15 +834,6 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light"
-																			className="indigo darken-1 white-text modal-actions" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left">close</i>Cancel
-																		</Button>
-																		<Button 
-																			flat 
-																			modal="close" 
-																			node="button" 
-																			waves="light"
 																			className="teal white-text modal-actions" 
 																			onClick={ () => {console.log('Clicked!')} }>
 																			<div className="btn-inner">
@@ -848,6 +841,15 @@ export default function Technologies() {
 																				<i className="material-icons left">add</i>Add
 																				</div>
 																			</div>
+																		</Button>
+																		<Button 
+																			flat 
+																			modal="close" 
+																			node="button" 
+																			waves="light"
+																			className="indigo darken-1 white-text modal-actions" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left">close</i>Cancel
 																		</Button>
 																	</div>
 																]}>
@@ -903,15 +905,6 @@ export default function Technologies() {
 																				modal="close" 
 																				node="button" 
 																				waves="light"
-																				className="indigo darken-1 white-text modal-actions" 
-																				onClick={ () => {console.log('Clicked!')} }>
-																				<i className="material-icons left">close</i>Cancel
-																			</Button>
-																			<Button 
-																				flat 
-																				modal="close" 
-																				node="button" 
-																				waves="light"
 																				className="teal white-text modal-actions" 
 																				onClick={ () => {console.log('Clicked!')} }>
 																				<div className="btn-inner">
@@ -919,6 +912,15 @@ export default function Technologies() {
 																						<i className="material-icons left">done</i>Update
 																					</div>
 																				</div>
+																			</Button>
+																			<Button 
+																				flat 
+																				modal="close" 
+																				node="button" 
+																				waves="light"
+																				className="indigo darken-1 white-text modal-actions" 
+																				onClick={ () => {console.log('Clicked!')} }>
+																				<i className="material-icons left">close</i>Cancel
 																			</Button>
 																		</div>
 																	]}>
@@ -949,14 +951,7 @@ export default function Technologies() {
 																<Modal
 																	actions={[
 																		<div className="center-align">
-																			<Button 
-																				flat 
-																				modal="close" 
-																				node="button" 
-																				waves="light" 
-																				className="indigo darken-1 white-text center-align">
-																				<i className="material-icons left card-icons">close</i>Cancel
-																			</Button>
+																			
 																			<Button 
 																				flat 
 																				modal="close" 
@@ -965,6 +960,14 @@ export default function Technologies() {
 																				className="teal white-text" 
 																				onClick={ () => {console.log('Clicked!')} }>
 																				<i className="material-icons left card-icons">delete</i>Delete
+																			</Button>
+																			<Button 
+																				flat 
+																				modal="close" 
+																				node="button" 
+																				waves="light" 
+																				className="indigo darken-1 white-text center-align">
+																				<i className="material-icons left card-icons">close</i>Cancel
 																			</Button>
 																		</div>
 																	]}
@@ -1004,15 +1007,6 @@ export default function Technologies() {
 																			modal="close" 
 																			node="button" 
 																			waves="light"
-																			className="indigo darken-1 white-text modal-actions" 
-																			onClick={ () => {console.log('Clicked!')} }>
-																			<i className="material-icons left">close</i>Cancel
-																		</Button>
-																		<Button 
-																			flat 
-																			modal="close" 
-																			node="button" 
-																			waves="light"
 																			className="teal white-text modal-actions" 
 																			onClick={ () => {console.log('Clicked!')} }>
 																			<div className="btn-inner">
@@ -1020,6 +1014,15 @@ export default function Technologies() {
 																					<i className="material-icons left">add</i>Add
 																				</div>
 																			</div>
+																		</Button>
+																		<Button 
+																			flat 
+																			modal="close" 
+																			node="button" 
+																			waves="light"
+																			className="indigo darken-1 white-text modal-actions" 
+																			onClick={ () => {console.log('Clicked!')} }>
+																			<i className="material-icons left">close</i>Cancel
 																		</Button>
 																	</div>
 																]}>
@@ -1066,15 +1069,6 @@ export default function Technologies() {
 													modal="close" 
 													node="button" 
 													waves="light"
-													className="indigo darken-1 white-text modal-actions" 
-													onClick={ () => {console.log('Clicked!')} }>
-													<i className="material-icons left">close</i>Cancel
-												</Button>
-												<Button 
-													flat 
-													modal="close" 
-													node="button" 
-													waves="light"
 													className="teal white-text modal-actions" 
 													onClick={ () => {console.log('Clicked!')} }>
 													<div className="btn-inner">
@@ -1082,6 +1076,15 @@ export default function Technologies() {
 															<i className="material-icons left">add</i>Add
 														</div>
 													</div>
+												</Button>
+												<Button 
+													flat 
+													modal="close" 
+													node="button" 
+													waves="light"
+													className="indigo darken-1 white-text modal-actions" 
+													onClick={ () => {console.log('Clicked!')} }>
+													<i className="material-icons left">close</i>Cancel
 												</Button>
 											</div>
 										]}>
